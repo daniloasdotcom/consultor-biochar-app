@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AppColors {
   static const primary = Color(0xFF2E7D32);
   static const primaryDark = Color(0xFF1B5E20);
@@ -15,7 +14,7 @@ class BestPracticesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lógica de tema (Idêntica à sua tela anterior)
+    // Lógica de tema
     final isDark = Theme.of(context).brightness == Brightness.dark;
     
     final bgColor = isDark ? const Color(0xFF121212) : Colors.grey[50];
@@ -26,7 +25,13 @@ class BestPracticesScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: bgColor,
       appBar: AppBar(
-        title: const Text("Boas Práticas de Uso"),
+        title: const Text(
+          "Boas Práticas de Uso",
+          style: TextStyle(
+            fontFamily: 'Merriweather', // <--- Fonte Aplicada
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         centerTitle: true,
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
@@ -52,13 +57,13 @@ class BestPracticesScreen extends StatelessWidget {
             // --- SEÇÃO 1: O ERRO MAIS COMUM (Ativação) ---
             SectionHeader(
               title: "A Regra de Ouro",
-              icon: Icons.star_outline, // Estrela para destacar importância
+              icon: Icons.star_outline,
               textColor: titleColor,
               iconColor: Colors.amber,
             ),
             const SizedBox(height: 8),
             
-            const SpongeEffectCard(), // Novo Widget Explicativo
+            const SpongeEffectCard(), 
             
             const SizedBox(height: 32),
 
@@ -108,13 +113,12 @@ class BestPracticesScreen extends StatelessWidget {
 
 // --- NOVOS WIDGETS ESPECÍFICOS PARA ESTA TELA ---
 
-// 1. CARD "EFEITO ESPONJA" (Conceitual)
+// 1. CARD "EFEITO ESPONJA"
 class SpongeEffectCard extends StatelessWidget {
   const SpongeEffectCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Usamos um gradiente sutil para destacar essa informação crucial
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -135,7 +139,12 @@ class SpongeEffectCard extends StatelessWidget {
               SizedBox(width: 8),
               Text(
                 "O 'Efeito Esponja'",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold, 
+                  fontSize: 18, 
+                  color: Colors.white,
+                  fontFamily: 'Merriweather', // <--- Fonte Aplicada
+                ),
               ),
             ],
           ),
@@ -218,7 +227,12 @@ class PreparationMethodsList extends StatelessWidget {
                   children: [
                     Text(
                       method['title']!,
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: isDark ? Colors.white : Colors.black87),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold, 
+                        fontSize: 15, 
+                        color: isDark ? Colors.white : Colors.black87,
+                        fontFamily: 'Merriweather', // <--- Fonte Aplicada
+                      ),
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -247,7 +261,7 @@ class PreparationMethodsList extends StatelessWidget {
   }
 }
 
-// 3. CARD DE SEGURANÇA (Visual de Alerta)
+// 3. CARD DE SEGURANÇA
 class SafetyCard extends StatelessWidget {
   final Color cardColor;
   final Color textColor;
@@ -284,7 +298,14 @@ class SafetyCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title, style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black87)),
+              Text(
+                title, 
+                style: TextStyle(
+                  fontWeight: FontWeight.bold, 
+                  color: isDark ? Colors.white : Colors.black87,
+                  fontFamily: 'Merriweather', // <--- Fonte Aplicada
+                ),
+              ),
               const SizedBox(height: 4),
               Text(desc, style: TextStyle(fontSize: 13, color: textColor)),
             ],
@@ -295,7 +316,7 @@ class SafetyCard extends StatelessWidget {
   }
 }
 
-// 4. DICAS RÁPIDAS DE APLICAÇÃO
+// 4. DICAS RÁPIDAS
 class ApplicationTips extends StatelessWidget {
   final Color textColor;
   final bool isDark;
@@ -306,7 +327,7 @@ class ApplicationTips extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _buildTip(Icons.layers, "Incorporação Profunda", "Não deixe na superfície (chuva arrasta e o vento leva). Incorpore nos primeiros 10-20cm do solo.", isDark, textColor),
+        _buildTip(Icons.layers, "Incorporação Profunda", "Não deixe na superfície (chuva arrasta e o vento leva). Incorpore ao solo.", isDark, textColor),
         _buildTip(Icons.grass, "Plantio Direto", "Aplique no sulco de plantio (na linha), misturado com o adubo, para economizar material e focar na raiz.", isDark, textColor),
         _buildTip(Icons.timelapse, "Frequência", "Biocarvão fica no solo por séculos. É uma aplicação única ou acumulativa (ex: aplicar todo ano um pouco).", isDark, textColor),
       ],
@@ -331,7 +352,15 @@ class ApplicationTips extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: isDark ? Colors.white : Colors.black87)),
+                Text(
+                  title, 
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold, 
+                    fontSize: 14, 
+                    color: isDark ? Colors.white : Colors.black87,
+                    fontFamily: 'Merriweather', // <--- Fonte Aplicada
+                  )
+                ),
                 Text(desc, style: TextStyle(fontSize: 13, color: textColor)),
               ],
             ),
@@ -342,7 +371,7 @@ class ApplicationTips extends StatelessWidget {
   }
 }
 
-// Reutilização simples do Header para o código compilar se copiado sozinho
+// HEADER REUTILIZÁVEL
 class SectionHeader extends StatelessWidget {
   final String title;
   final IconData icon;
@@ -357,7 +386,17 @@ class SectionHeader extends StatelessWidget {
       children: [
         Icon(icon, color: iconColor, size: 28),
         const SizedBox(width: 10),
-        Expanded(child: Text(title, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textColor))),
+        Expanded(
+          child: Text(
+            title, 
+            style: TextStyle(
+              fontSize: 20, 
+              fontWeight: FontWeight.bold, 
+              color: textColor,
+              fontFamily: 'Merriweather', // <--- Fonte Aplicada
+            )
+          ),
+        ),
       ],
     );
   }
