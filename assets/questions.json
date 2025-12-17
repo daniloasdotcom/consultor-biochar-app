@@ -1,0 +1,632 @@
+[
+  {
+    "id": "1",
+    "category": "regulamentacao",
+    "difficulty": "medio",
+    "question": "Segundo o European Biochar Certificate (EBC), qual é o limite obrigatório da razão molar H/Corg?",
+    "options": [
+      "H/C ≤ 0,4",
+      "H/C ≤ 0,7",
+      "H/C ≤ 1,0",
+      "H/C ≤ 1,5"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O EBC exige H/Corg ≤ 0,7. Materiais acima disso indicam carbonização incompleta e não são certificados."
+  },
+  {
+    "id": "2",
+    "category": "producao",
+    "difficulty": "dificil",
+    "question": "Qual é a principal origem da contaminação por HPAs (Hidrocarbonetos Policíclicos Aromáticos)?",
+    "options": [
+      "Biomassa contendo metais pesados",
+      "Uso de lodo de esgoto",
+      "Condensação de fumaça/alcatrão durante a pirólise",
+      "Armazenamento incorreto"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Os HPAs se formam quando os gases da pirólise (fumaça) condensam sobre o carvão já frio devido a falhas no controle térmico."
+  },
+  {
+    "id": "3",
+    "category": "regulamentacao",
+    "difficulty": "dificil",
+    "question": "Na comparação entre EBC e IBI sobre Metais Pesados, qual afirmação é verdadeira?",
+    "options": [
+      "O IBI reprova automaticamente qualquer excesso.",
+      "Ambos possuem os mesmos limites para Cádmio.",
+      "O EBC é binário (passa/não passa); o IBI usa faixas de referência (MAT) para classificação.",
+      "O EBC não exige análise de metais pesados."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "O EBC possui limites rígidos de corte. O IBI utiliza 'Maximum Allowed Thresholds' que permitem aprovação dependendo da avaliação de risco."
+  },
+  {
+    "id": "4",
+    "category": "quimica",
+    "difficulty": "medio",
+    "question": "O que indica tecnicamente uma razão H/C de 0,9 em um biochar?",
+    "options": [
+      "Alta capacidade de retenção de água.",
+      "Baixa estabilidade: degradação rápida no solo.",
+      "Excelente para sequestro de carbono a longo prazo.",
+      "Excesso de minerais inertes."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "H/C > 0,7 indica baixa aromaticidade. O material é instável biologicamente e não serve para créditos de carbono de longo prazo."
+  },
+  {
+    "id": "5",
+    "category": "quimica",
+    "difficulty": "facil",
+    "question": "Qual elemento é um metal pesado tóxico, mas micronutriente essencial em baixas doses?",
+    "options": [
+      "Chumbo (Pb)",
+      "Cádmio (Cd)",
+      "Zinco (Zn)",
+      "Arsênio (As)"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Zinco (Zn) e Cobre (Cu) são micronutrientes essenciais. Chumbo, Cádmio e Arsênio são puramente tóxicos."
+  },
+  {
+    "id": "6",
+    "category": "processo",
+    "difficulty": "dificil",
+    "question": "Por que a temperatura máxima de pirólise isoladamente não garante um H/Corg baixo?",
+    "options": [
+      "Porque a biomassa define completamente o H/C",
+      "Porque o tempo de residência térmica e a disponibilidade de oxigênio também influenciam a aromatização",
+      "Porque temperaturas acima de 400 °C sempre geram biochar estável",
+      "Porque o H/C depende apenas do teor de cinzas"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A estabilidade do biochar depende da combinação entre temperatura, tempo de residência e atmosfera pobre em oxigênio. Aquecimentos rápidos ou má vedação podem gerar H/C elevado mesmo em altas temperaturas."
+  },
+  {
+    "id": "7",
+    "category": "carbono",
+    "difficulty": "dificil",
+    "question": "Por que um biochar certificado EBC pode ainda assim não gerar créditos de carbono?",
+    "options": [
+      "Porque o EBC não permite uso agrícola",
+      "Porque certificação de produto não garante adicionalidade nem MRV",
+      "Porque o teor de carbono do biochar é irrelevante",
+      "Porque o EBC proíbe projetos de carbono"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O EBC certifica qualidade do produto. Créditos de carbono exigem adicionalidade, permanência, MRV e avaliação de emissões do sistema, tratados por padrões como Puro.earth ou Verra."
+  },
+  {
+    "id": "8",
+    "category": "agronomia",
+    "difficulty": "dificil",
+    "question": "Em qual situação o uso agrícola de um biochar com CE elevada (>4 mS/cm) é mais crítico?",
+    "options": [
+      "Solos argilosos com alta CTC",
+      "Culturas halófitas",
+      "Solos arenosos com baixa capacidade tampão",
+      "Solos calcários com pH alto"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Solos arenosos têm baixa capacidade de retenção de íons. A aplicação de biochar salino pode causar estresse osmótico e queda de produtividade."
+  },
+  {
+    "id": "9",
+    "category": "regulamentacao",
+    "difficulty": "dificil",
+    "question": "Qual parâmetro abaixo é crítico para a aceitação de biochar em metodologias de remoção de CO₂?",
+    "options": [
+      "Área superficial BET",
+      "Granulometria",
+      "Modelo de estabilidade do carbono ao longo do tempo",
+      "pH em CaCl₂"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Metodologias de CDR exigem modelagem da permanência do carbono (≥100 anos), baseada em H/C, teor de carbono e fatores de degradação."
+  },
+  {
+    "id": "10",
+    "category": "quimica",
+    "difficulty": "dificil",
+    "question": "Por que biocarvões com alto teor de cinzas tendem a apresentar pH elevado?",
+    "options": [
+      "Devido à presença de carbono amorfo",
+      "Devido à concentração de óxidos, carbonatos e hidróxidos minerais",
+      "Devido à maior área superficial",
+      "Devido à oxidação do carbono aromático"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Cinzas concentram bases minerais (Ca, Mg, K, Na), que elevam o pH. Quanto maior o teor de cinzas, maior a alcalinidade potencial."
+  },
+  {
+    "id": "11",
+    "category": "risco",
+    "difficulty": "muito_dificil",
+    "question": "Qual é o principal risco de usar resíduos industriais como biomassa para biochar?",
+    "options": [
+      "Baixo rendimento energético",
+      "Alta umidade",
+      "Introdução de contaminantes persistentes e metais pesados",
+      "Baixa área superficial"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Resíduos industriais podem concentrar metais pesados e compostos tóxicos que permanecem no biochar, inviabilizando certificação e uso agrícola."
+  },
+  {
+    "id": "12",
+    "category": "certificacao",
+    "difficulty": "muito_dificil",
+    "question": "Por que o IBI aceita faixas de metais pesados mais amplas que o EBC?",
+    "options": [
+      "Porque o IBI ignora riscos ambientais",
+      "Porque o IBI é voltado apenas a mercados não agrícolas",
+      "Porque o IBI harmoniza diferentes legislações internacionais e exige avaliação de risco local",
+      "Porque o IBI não avalia segurança"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "O IBI consolida limites de várias jurisdições e permite decisão baseada em contexto local, enquanto o EBC adota limites rígidos preventivos."
+  },
+  {
+    "id": "13",
+    "category": "carbono",
+    "difficulty": "muito_dificil",
+    "question": "O que caracteriza adicionalidade em um projeto de biochar para crédito de carbono?",
+    "options": [
+      "Produzir biochar em grande escala",
+      "Utilizar biomassa abundante",
+      "Demonstrar que o projeto não ocorreria sem a receita do carbono",
+      "Aplicar o biochar em solos agrícolas"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Adicionalidade comprova que a remoção de CO₂ não ocorreria no cenário de linha de base sem o incentivo financeiro dos créditos."
+  },
+  {
+    "id": "14",
+    "category": "aplicacao",
+    "difficulty": "dificil",
+    "question": "Por que a compostagem prévia do biocarvão pode melhorar seu desempenho agronômico?",
+    "options": [
+      "Aumenta a temperatura do material",
+      "Reduz o teor de carbono fixo",
+      "Carrega os poros com nutrientes e reduz efeitos negativos iniciais",
+      "Remove completamente os minerais"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "A compostagem 'carrega' o biochar com nutrientes e microrganismos, reduzindo imobilização inicial de nutrientes e melhorando a resposta das culturas."
+  },
+  {
+    "id": "15",
+    "category": "consultoria",
+    "difficulty": "muito_dificil",
+    "question": "Qual é a abordagem mais profissional ao avaliar um laudo de biochar?",
+    "options": [
+      "Verificar apenas se passa nos limites",
+      "Comparar apenas com a certificação desejada",
+      "Analisar interações entre parâmetros, uso final e risco",
+      "Avaliar apenas H/C e carbono total"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Consultoria de alto nível avalia sinergias e riscos: pH × solo, CE × cultura, metais × biomassa, e compatibilidade com mercado e certificações."
+  },
+  {
+    "id": "16",
+    "category": "processo",
+    "difficulty": "medio",
+    "question": "Qual efeito o aumento do tempo de residência térmica tem sobre a estabilidade do biochar?",
+    "options": [
+      "Reduz a aromaticidade do carbono",
+      "Aumenta a razão O/C",
+      "Favorece a condensação de HPAs",
+      "Aumenta a condensação e reorganização aromática do carbono"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Maior tempo de residência permite rearranjos estruturais do carbono, aumentando a aromaticidade e a estabilidade do biochar."
+  },
+  {
+    "id": "17",
+    "category": "quimica",
+    "difficulty": "dificil",
+    "question": "Qual parâmetro é mais diretamente relacionado à permanência do carbono no solo?",
+    "options": [
+      "Condutividade elétrica",
+      "Área superficial BET",
+      "Razão molar H/Corg",
+      "Teor de cinzas"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "A razão H/Corg é um dos principais indicadores de aromaticidade e resistência à degradação biológica do carbono."
+  },
+  {
+    "id": "18",
+    "category": "agronomia",
+    "difficulty": "medio",
+    "question": "Por que doses elevadas de biochar podem reduzir a produtividade no curto prazo?",
+    "options": [
+      "Liberação excessiva de nitrogênio",
+      "Imobilização temporária de nutrientes",
+      "Aumento imediato da atividade microbiana patogênica",
+      "Redução permanente da CTC do solo"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Biochar não carregado pode adsorver nutrientes disponíveis, causando deficiência temporária para as plantas."
+  },
+  {
+    "id": "19",
+    "category": "certificacao",
+    "difficulty": "muito_dificil",
+    "question": "Qual informação é essencial em auditorias de biochar para créditos de carbono?",
+    "options": [
+      "Cor visual do produto",
+      "Histórico completo da biomassa e rastreabilidade",
+      "Granulometria média",
+      "Umidade após aplicação no solo"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Auditorias exigem rastreabilidade da biomassa para comprovar adicionalidade, elegibilidade e ausência de dupla contagem."
+  },
+  {
+    "id": "20",
+    "category": "risco",
+    "difficulty": "dificil",
+    "question": "Por que a análise de dioxinas e furanos pode ser relevante em certos biochars?",
+    "options": [
+      "Porque se formam em solos agrícolas",
+      "Porque podem ser gerados em processos com cloro e combustão parcial",
+      "Porque estão sempre presentes em biomassa vegetal",
+      "Porque substituem os HPAs como principal contaminante"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Dioxinas e furanos podem se formar quando há cloro e controle inadequado do processo térmico, especialmente em resíduos tratados."
+  },
+  {
+    "id": "21",
+    "category": "engenharia",
+    "difficulty": "medio",
+    "question": "Qual é o impacto prático de utilizar biomassa com umidade superior a 20% no processo de pirólise?",
+    "options": [
+      "Melhora a qualidade dos poros do biochar",
+      "Não tem impacto, pois a água evapora",
+      "Consome energia excessiva do sistema para secagem, reduzindo o rendimento energético global e a temperatura efetiva",
+      "Aumenta a produção de óleo em detrimento do carvão"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "A água tem alto calor latente de vaporização. Biomassa úmida 'rouba' energia do processo para evaporar a água antes de pirolisar, podendo impedir que o reator atinja temperaturas necessárias para estabilização (H/C baixo)."
+  },
+  {
+    "id": "22",
+    "category": "seguranca",
+    "difficulty": "dificil",
+    "question": "O que é o fenômeno da 'combustão espontânea' no armazenamento de biochar recém-produzido?",
+    "options": [
+      "Reação do biochar com nitrogênio do ar",
+      "Oxidação rápida (quimisorção de O₂) em poros recém-abertos que gera calor e pode incendiar o material",
+      "Interação entre o biochar e a umidade do ar que resfria o material",
+      "Reação exclusiva de biochars com alto teor de metais"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O biochar fresco possui radicais livres e poros ávidos por oxigênio. A rápida adsorção de O₂ é exotérmica. Se o calor não for dissipado (pilhas grandes sem cura), o material pode se autoignitar."
+  },
+  {
+    "id": "23",
+    "category": "mercado",
+    "difficulty": "dificil",
+    "question": "Além da agricultura, qual é um mercado emergente de alto valor (High-Tech) para o biocarvão certificado EBC-Material?",
+    "options": [
+      "Combustão direta em churrasqueiras",
+      "Uso como agregado em compósitos de construção (concreto/asfalto) e plásticos",
+      "Aterro sanitário",
+      "Cobertura de solo (mulching)"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O uso em materiais (concreto, asfalto, polímeros) sequestra carbono permanentemente e pode melhorar propriedades mecânicas ou de isolamento, sendo classificado como um sumidouro de carbono técnico."
+  },
+  {
+    "id": "24",
+    "category": "quimica",
+    "difficulty": "muito_dificil",
+    "question": "Qual a diferença funcional entre macroporos (>50nm) e microporos (<2nm) no biochar aplicado ao solo?",
+    "options": [
+      "Não há diferença funcional",
+      "Macroporos retêm metais pesados; microporos abrigam bactérias",
+      "Macroporos favorecem habitat microbiano e aeração; microporos são responsáveis pela adsorção química e retenção de água/nutrientes",
+      "Microporos drenam o solo; macroporos retêm água"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "A estrutura física define a função: 'casas' para microrganismos e raízes (macro) versus área superficial para reações químicas e forças de Van der Waals (micro)."
+  },
+  {
+    "id": "25",
+    "category": "regulamentacao",
+    "difficulty": "medio",
+    "question": "Para obter a certificação 'EBC-Feed' (Alimentação Animal), qual parâmetro possui restrição muito mais severa do que para uso no solo?",
+    "options": [
+      "Teor de Carbono",
+      "Hidrocarbonetos Policíclicos Aromáticos (HPAs)",
+      "Densidade",
+      "Condutividade Elétrica"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Como os animais bioacumulam toxinas que podem passar para o leite/carne, o limite de HPAs para EBC-Feed é extremamente baixo (geralmente <4 mg/kg), muito mais rígido que para o solo."
+  },
+  {
+    "id": "26",
+    "category": "processo",
+    "difficulty": "dificil",
+    "question": "O que significa 'Gás de Síntese' (Syngas) em uma planta de produção de biochar?",
+    "options": [
+      "O vapor d'água liberado pela biomassa",
+      "Gás combustível (CO, H₂, CH₄) gerado na pirólise que pode ser queimado para auto-sustentar o processo térmico",
+      "Gás inerte usado para resfriar o carvão",
+      "Gás carbônico puro capturado na chaminé"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O Syngas é o subproduto volátil energético. Um consultor deve saber que sua queima eficiente é vital para a viabilidade econômica (energia térmica/elétrica) e ambiental (evitar emissão de metano) do projeto."
+  },
+  {
+    "id": "27",
+    "category": "agronomia",
+    "difficulty": "medio",
+    "question": "Qual é a definição de 'Efeito Priming' positivo induzido pelo biochar no solo?",
+    "options": [
+      "A morte súbita de microrganismos",
+      "A aceleração da decomposição da matéria orgânica nativa do solo devido ao aumento da atividade microbiana inicial",
+      "O bloqueio da absorção de nitrogênio",
+      "A compactação imediata do solo"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O Priming Effect ocorre quando a adição de biochar estimula os microrganismos a degradarem carbono antigo do solo (SOM), o que pode liberar CO₂ a curto prazo, mas mineralizar nutrientes."
+  },
+  {
+    "id": "28",
+    "category": "consultoria",
+    "difficulty": "muito_dificil",
+    "question": "Um cliente quer pirolisar cama de frango (esterco). Qual é o principal alerta agronômico comparado ao biochar de madeira?",
+    "options": [
+      "O biochar de esterco terá pH muito ácido",
+      "O biochar de esterco terá baixíssimo teor de cinzas",
+      "O biochar de esterco terá alta densidade de nutrientes (P, K) e alto pH, funcionando mais como fertilizante do que como condicionador físico",
+      "Não há diferença significativa"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Biochars de dejetos (manure) são ricos em cinzas e nutrientes. O consultor deve recomendá-los como fonte de P e K, enquanto biochars de madeira (lignina) são para estrutura, C-fixo e retenção de água."
+  },
+  {
+    "id": "29",
+    "category": "carbono",
+    "difficulty": "dificil",
+    "question": "No cálculo de LCA (Life Cycle Assessment) para créditos de carbono, o que é o 'leakage' (vazamento)?",
+    "options": [
+      "Vazamento de água do reator",
+      "Emissões indiretas que ocorrem fora dos limites do projeto devido à implementação do mesmo (ex: desmatamento em outra área)",
+      "Perda física de biochar durante o transporte",
+      "Venda do biochar sem nota fiscal"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Leakage refere-se ao risco de que a produção de biomassa para biochar desloque atividades (como produção de alimentos) para outras áreas, causando emissões lá. É um critério chave de integridade."
+  },
+  {
+    "id": "30",
+    "category": "tecnologia",
+    "difficulty": "medio",
+    "question": "Qual a vantagem do 'Quenching' (resfriamento rápido com água) ao final do processo de pirólise?",
+    "options": [
+      "Aumentar o teor de carbono fixo",
+      "Parar reações de oxidação, impedir a formação de dioxinas secundárias e reduzir a poeira (dust)",
+      "Eliminar totalmente os metais pesados",
+      "Cristalizar o carbono em grafeno"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O quenching trava o processo, impede que o carvão queime ao sair do reator e a umidade adicionada facilita o manuseio seguro, evitando poeira explosiva ou nociva à respiração."
+  },
+  {
+    "id": "31",
+    "category": "quimica",
+    "difficulty": "muito_dificil",
+    "question": "Segundo Lawrinenko e Banik (2018), qual o grupo funcional responsável pela Capacidade de Troca Aniónica (AEC) estável em pHs elevados, encontrada em biochars produzidos a altas temperaturas (>700 °C)?",
+    "options": [
+      "Grupos carboxílicos desprotonados",
+      "Oxónios em ponte (bridging oxonium) em estruturas heterocíclicas",
+      "Oxónios não-ponte (non-bridging) hidrolisáveis",
+      "Grupos fenólicos ácidos"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Biochars de alta temperatura desenvolvem estruturas aromáticas condensadas com oxigénio em anéis heterocíclicos (oxónios em ponte). Estes são estericamente protegidos e resistem à hidrólise alcalina, garantindo uma carga positiva (AEC) estável, ao contrário dos oxónios não-ponte formados a temperaturas moderadas."
+  },
+  {
+    "id": "32",
+    "category": "tecnologia",
+    "difficulty": "muito_dificil",
+    "question": "No contexto de biochars 'engenheirados' (Dey et al., 2023), qual a combinação de tratamentos foi identificada como a mais eficaz para aumentar simultaneamente a CTC e a AEC em biochar de palha de arroz?",
+    "options": [
+      "Ativação física com vapor de água seguida de lavagem",
+      "Oxidação com Ozono (O₃) seguida de dopagem com Ferro (HCl-FeCl₃)",
+      "Lavagem ácida simples com HCl para remoção de cinzas",
+      "Pirólise rápida em atmosfera de Azoto puro"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O tratamento com Ozono introduz grupos funcionais oxigenados (aumentando a CTC), enquanto a modificação com Ferro cria superfícies de carga positiva (aumentando a AEC), resultando num material bifuncional superior para retenção simultânea de amónio e nitratos."
+  },
+  {
+    "id": "33",
+    "category": "agronomia",
+    "difficulty": "dificil",
+    "question": "Segundo López et al. (2023), qual é o efeito da co-aplicação superficial de biochar com calcário dolomítico em solos de cacau?",
+    "options": [
+      "O biochar imobiliza o cálcio na superfície, impedindo a correção do pH em profundidade.",
+      "O biochar aumenta a mobilidade vertical da alcalinidade, reduzindo o Cádmio (Cd) disponível até 40 cm de profundidade.",
+      "O biochar reage com o magnésio formando precipitados insolúveis que bloqueiam os poros.",
+      "Não há interação química relevante entre o biochar e a mobilidade do calcário."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A aplicação conjunta facilita o transporte de iões alcalinos (Ca, Mg) e carbono orgânico dissolvido para camadas subsuperficiais, elevando o pH em profundidade e promovendo a imobilização do Cádmio nessas zonas, reduzindo a sua absorção pela planta."
+  },
+  {
+    "id": "34",
+    "category": "aplicacao",
+    "difficulty": "medio",
+    "question": "Em relação à profundidade de aplicação do biochar em cultura de arroz de sequeiro (Hamada et al., 2024), qual foi a conclusão sobre a lixiviação de nitrogénio?",
+    "options": [
+      "A incorporação profunda (camada arável) é a mais eficiente para reter nitratos.",
+      "A aplicação superficial (0-5 cm) reduziu o stress hídrico e a lixiviação de nitratos melhor que a incorporação profunda.",
+      "A aplicação em profundidade aumentou a lixiviação de amónio, mas reduziu a de nitratos.",
+      "A profundidade de aplicação não teve impacto significativo na lixiviação."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A incorporação profunda causou a secagem da camada superficial do solo, induzindo stress hídrico que prejudicou a absorção de azoto pelas raízes, aumentando a lixiviação. A aplicação superficial manteve a humidade do solo e a eficiência radicular, reduzindo as perdas de N."
+  },
+  {
+    "id": "35",
+    "category": "producao",
+    "difficulty": "dificil",
+    "question": "De acordo com Tan et al. (2017), qual a vantagem da pirólise em atmosfera de CO₂ a 400 °C para a qualidade agronómica do biochar de palha de arroz?",
+    "options": [
+      "Elimina completamente o potássio da matriz de carbono através da volatilização.",
+      "Favorece a preservação do potássio em formas iónicas disponíveis (KCl, K₂SO₄) e aumenta a área superficial.",
+      "Reduz a porosidade do material, aumentando a sua densidade aparente.",
+      "Converte todo o carbono lábil em grafite inerte, impedindo a reação no solo."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A atmosfera de CO₂ atua como um agente de ativação moderada, promovendo a formação de microporos e facilitando a conversão de complexos orgânicos de potássio (Complex-K) em sais solúveis prontamente disponíveis para as plantas."
+  },
+  {
+    "id": "36",
+    "category": "agronomia",
+    "difficulty": "muito_dificil",
+    "question": "No estudo de Hamada et al. (2024) com arroz de sequeiro, a aplicação de biochar incorporado na camada arável (0-30 cm) teve um resultado inesperado comparado com a aplicação superficial (0-5 cm). Qual foi esse resultado?",
+    "options": [
+      "Reduziu a lixiviação de nitratos em 50% devido à maior interação com raízes.",
+      "Aumentou a lixiviação de nitratos (>100%) e causou stress hídrico na camada superficial, inibindo o crescimento radicular.",
+      "Não teve efeito significativo na lixiviação, mas aumentou a produtividade.",
+      "Imobilizou totalmente o azoto, causando deficiência severa na cultura."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A incorporação na camada arável alterou a dinâmica da água, causando secagem frequente da camada superficial (0-10 cm). Isso impediu o desenvolvimento de raízes nessa zona crítica, reduzindo a absorção de azoto pela planta e permitindo que o nitrato fosse lixiviado."
+  },
+  {
+    "id": "37",
+    "category": "quimica",
+    "difficulty": "dificil",
+    "question": "Qual evidência apresentada por Lawrinenko e Laird (2015) comprova que a Capacidade de Troca Aniónica (AEC) em pH alcalino não depende de grupos nitrogenados?",
+    "options": [
+      "A deteção de grupos carboxílicos protonados em pH 8.",
+      "O facto de biochars de celulose pura (sem azoto) apresentarem AEC significativa devido a heterociclos de oxigénio (oxónios).",
+      "A correlação direta entre o teor de cinzas e a AEC.",
+      "A ausência de bandas de estiramento C-N no espectro infravermelho."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Biochars produzidos a partir de celulose contêm apenas C, H e O. A existência de AEC neste material, especialmente a pH 8 (onde grupos piridínicos estariam desprotonados), isola os oxónios (anéis aromáticos com O+) como a causa da carga positiva estável."
+  },
+  {
+    "id": "38",
+    "category": "producao",
+    "difficulty": "medio",
+    "question": "Comparando biochars de biomassa não-lenhosa (ex: resíduo de beringela) e lenhosa (ex: acácia) produzidos a 600 °C, qual apresenta maior potencial de calagem (CCE) segundo Murtaza et al. (2024)?",
+    "options": [
+      "O lenhoso, devido à estrutura condensada da lenhina.",
+      "Ambos apresentam o mesmo potencial, pois a temperatura é o único fator relevante.",
+      "O não-lenhoso, devido ao maior teor de cinzas e concentração de minerais alcalinos (K, Mg, Ca).",
+      "O lenhoso, devido à maior área superficial específica."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Biomassas não-lenhosas (herbáceas/frutos) acumulam mais nutrientes e minerais. Durante a pirólise, estes formam óxidos e carbonatos nas cinzas, conferindo ao biochar um pH e Equivalente de Carbonato de Cálcio (CCE) superiores aos da madeira."
+  },
+  {
+    "id": "39",
+    "category": "tecnologia",
+    "difficulty": "muito_dificil",
+    "question": "Em biochars modificados com Ferro para retenção de nutrientes (Dey et al., 2023), qual é o principal mecanismo químico responsável pela alta adsorção de fosfato ($PO_{4}^{3-}$)?",
+    "options": [
+      "Atração eletrostática simples com a superfície de carbono.",
+      "Precipitação física nos microporos sem reação química.",
+      "Troca de ligandos (complexação de esfera interna) com grupos hidroxilo na superfície de oxi-hidróxidos de ferro (FeOOH).",
+      "Oxidação do fosfato a fósforo elementar."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Ao contrário do nitrato, que é retido principalmente por atração eletrostática (esfera externa), o fosfato forma ligações químicas fortes (esfera interna) substituindo grupos -OH na superfície dos óxidos de ferro formados no biochar."
+  },
+  {
+    "id": "40",
+    "category": "agronomia",
+    "difficulty": "dificil",
+    "question": "De acordo com Gaurav et al. (2025), qual foi o efeito da aplicação profunda de biochar (20 cm) na morfologia radicular do milho em comparação com a aplicação superficial?",
+    "options": [
+      "Reduziu o volume radicular devido à compactação do solo.",
+      "Aumentou significativamente o comprimento (+48%) e volume radicular, promovendo o acesso a água e nutrientes em camadas profundas.",
+      "Não houve alteração estatística na biomassa radicular.",
+      "Concentrou as raízes apenas nos primeiros 5 cm de solo."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A aplicação profunda cria 'hotspots' de retenção de água e nutrientes protegidos da evaporação superficial. As raízes proliferam nestas zonas (hidrotropismo/quimiotropismo), resultando num sistema radicular mais robusto e profundo."
+  },
+  {
+    "id": "41",
+    "category": "quimica",
+    "difficulty": "muito_dificil",
+    "question": "Segundo Banik et al. (2018), o que indica um biochar que apresenta um Ponto de Efeito Salino Zero (PZSE) alto, mas um Ponto de Carga Líquida Zero (PZNC) baixo?",
+    "options": [
+      "Predominância de grupos carboxílicos estáveis",
+      "Presença de grupos oxônio 'não-ponte' (non-bridging) que são instáveis e hidrolisáveis",
+      "Alta aromaticidade com grupos oxônio 'em ponte' (bridging) inertes",
+      "Biochar produzido a temperaturas superiores a 800 °C"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A discrepância entre PZSE alto (indicando potencial positivo) e PZNC baixo (carga líquida negativa) em biochars de média temperatura (500-700°C) revela a existência de grupos oxônio instáveis que se degradam durante a titulação ou medição de pH, não contribuindo para uma AEC permanente."
+  },
+  {
+    "id": "42",
+    "category": "producao",
+    "difficulty": "dificil",
+    "question": "De acordo com Tan et al. (2017), qual é o mecanismo físico-químico que torna a pirólise em atmosfera de CO₂ a 400 °C superior à de N₂ para a fertilidade potássica?",
+    "options": [
+      "O CO₂ oxida o potássio para K₂O",
+      "O CO₂ promove uma 'gasificação suave' que consome carbono amorfo, desbloqueando poros e expondo sais de K antes oclusos",
+      "A atmosfera de CO₂ aumenta a temperatura interna da partícula",
+      "O N₂ forma complexos insolúveis de cianeto de potássio"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A atmosfera de CO₂ atua como agente de ativação física moderada (Reação de Boudouard), limpando o alcatrão e o carbono desordenado da superfície, o que aumenta a área superficial e a disponibilidade de saída para os íons de potássio."
+  },
+  {
+    "id": "43",
+    "category": "quimica",
+    "difficulty": "medio",
+    "question": "Segundo Gaurav et al. (2025), qual alteração drástica na composição elementar superficial do biochar ocorre após o envelhecimento (aging) no solo?",
+    "options": [
+      "Aumento do teor de Carbono para >80%",
+      "Perda total de Nitrogênio",
+      "O teor de Oxigênio quase duplica (de ~20% para ~36%), reduzindo a razão C/O",
+      "Mineralização completa do esqueleto de carbono"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "O processo de envelhecimento no solo expõe o biochar à oxidação biótica e abiótica, inserindo grupos funcionais oxigenados na superfície, o que reduz a percentagem relativa de carbono e aumenta drasticamente a de oxigênio."
+  },
+  {
+    "id": "44",
+    "category": "risco",
+    "difficulty": "dificil",
+    "question": "No estudo de remediação de solos com Cádmio (López et al., 2023), qual foi o principal efeito geoquímico da co-aplicação de biochar e calcário?",
+    "options": [
+      "Volatilização do Cádmio para a atmosfera",
+      "Redução da fração 'Trocável' (Exchangeable) e redistribuição para frações ligadas a carbonatos e matéria orgânica",
+      "Aumento da lixiviação de Cádmio para o lençol freático",
+      "Formação de ligas metálicas de Cádmio-Ferro"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "O tratamento combinado aumentou o pH e a CTC, transformando o Cádmio que estava livre (trocável/biodisponível) em formas precipitadas (carbonatos) ou complexadas organicamente, reduzindo sua toxicidade imediata."
+  },
+  {
+    "id": "45",
+    "category": "tecnologia",
+    "difficulty": "muito_dificil",
+    "question": "Qual banda espectral no infravermelho (FTIR) foi identificada por Lawrinenko e Laird (2015) como a assinatura dos heterociclos de oxônio responsáveis pela Capacidade de Troca Aniônica (AEC)?",
+    "options": [
+      "~3400 cm⁻¹ (Estiramento O-H)",
+      "~2900 cm⁻¹ (Estiramento C-H alifático)",
+      "~1590 cm⁻¹ (Estiramento C-O⁺ aromático)",
+      "~1050 cm⁻¹ (Estiramento C-O de polissacarídeos)"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "A banda em 1590 cm⁻¹ é característica de vibrações de anéis aromáticos, mas sua intensidade e correlação com a AEC em biochars de alta temperatura (onde grupos carboxílicos já degradaram) indicam a presença de estruturas de oxônio (C-O⁺) estabilizadas por ressonância."
+  }
+]
