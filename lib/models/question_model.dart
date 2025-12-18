@@ -14,10 +14,10 @@ enum QuestionCategory {
   certificacao, 
   aplicacao, 
   consultoria, 
-  engenharia, // Novo (Q21)
-  seguranca,  // Novo (Q22)
-  mercado,    // Novo (Q23)
-  tecnologia, // Novo (Q30)
+  engenharia, 
+  seguranca,  
+  mercado,    
+  tecnologia, 
   geral 
 }
 

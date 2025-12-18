@@ -4,14 +4,26 @@ import '../data/questions_repository.dart';
 
 class BiocharQuizScreen extends StatefulWidget {
   final VoidCallback onToggleTheme;
+  
+  // --- Parâmetros para Modo Treino (Aleatório) ---
   final int totalQuestions;
-  final QuestionCategory? categoryFilter; // Novo parâmetro opcional
+  final QuestionCategory? categoryFilter;
+  final String? questionsAssetPath; // Agora é opcional/nullable
+  
+  // --- Parâmetros para Modo Paper (Fixo) ---
+  final List<QuizQuestion>? fixedQuestions; 
+  final String? quizTitle; // Título customizado (ex: Nome do Paper)
 
   const BiocharQuizScreen({
     super.key, 
     required this.onToggleTheme,
+    // Valores padrão para o modo treino
     this.totalQuestions = 10,
-    this.categoryFilter, // Recebe do construtor
+    this.categoryFilter,
+    this.questionsAssetPath,
+    // Novos parâmetros opcionais
+    this.fixedQuestions,
+    this.quizTitle,
   });
 
   @override
@@ -36,32 +48,51 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
     _initializeData();
   }
 
-  // 1. Carrega o JSON e inicia o sorteio
   Future<void> _initializeData() async {
-    await _repository.loadQuestions();
-    _startNewQuiz();
-    if (mounted) {
+    // LÓGICA HÍBRIDA:
+
+    // 1. MODO PAPER: Se passamos uma lista fixa, usamos ela diretamente.
+    if (widget.fixedQuestions != null && widget.fixedQuestions!.isNotEmpty) {
       setState(() {
+        _questions = widget.fixedQuestions!;
         _isLoading = false;
+      });
+    } 
+    // 2. MODO TREINO: Se temos um path de arquivo, carregamos e sorteamos.
+    else if (widget.questionsAssetPath != null) {
+      await _repository.loadQuestions(widget.questionsAssetPath!);
+      _startNewRandomQuiz();
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    } else {
+      // Fallback de segurança caso nenhum parâmetro seja passado
+      setState(() {
+        _isLoading = false; 
       });
     }
   }
 
-  // 2. Sorteia as questões com FILTRO
-  void _startNewQuiz() {
+  // Apenas usado no Modo Treino para sortear e cortar a lista
+  void _startNewRandomQuiz() {
     setState(() {
-      // Passamos o categoryFilter para o repositório
       _questions = _repository.getQuizSession(
         numberOfQuestions: widget.totalQuestions,
         categoryFilter: widget.categoryFilter, 
       );
       
-      _currentIndex = 0;
-      _score = 0;
-      _isAnswered = false;
-      _selectedAnswerIndex = null;
-      _showScoreScreen = false;
+      _resetQuizState();
     });
+  }
+
+  void _resetQuizState() {
+    _currentIndex = 0;
+    _score = 0;
+    _isAnswered = false;
+    _selectedAnswerIndex = null;
+    _showScoreScreen = false;
   }
 
   void _answerQuestion(int index) {
@@ -96,9 +127,14 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final backgroundColor = isDark ? const Color(0xFF121212) : const Color(0xFFF3F4F6);
 
-    // Título dinâmico baseado no filtro
-    String appTitle = "Consultoria Técnica";
-    if (widget.categoryFilter != null) {
+    // Definição do Título do App Bar
+    String appTitle = "Treinamento Técnico";
+    
+    if (widget.quizTitle != null) {
+      // Prioridade 1: Título customizado (ex: Nome do Paper)
+      appTitle = widget.quizTitle!;
+    } else if (widget.categoryFilter != null) {
+      // Prioridade 2: Nome da Categoria (Modo Treino)
       appTitle = widget.categoryFilter!.displayName;
     }
 
@@ -109,7 +145,9 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
           children: [
             Text(
               appTitle,
-              style: const TextStyle(fontFamily: 'Merriweather', fontWeight: FontWeight.bold, fontSize: 18),
+              style: const TextStyle(fontFamily: 'Merriweather', fontWeight: FontWeight.bold, fontSize: 16),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             if (!_showScoreScreen && !_isLoading && _questions.isNotEmpty)
                Text(
@@ -136,7 +174,6 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
 
   // --- CONTEÚDO DA PERGUNTA ---
   Widget _buildQuizContent(bool isDark) {
-    // Caso o filtro selecionado não retorne nenhuma questão (ex: categoria vazia no JSON)
     if (_questions.isEmpty) {
       return Center(
         child: Padding(
@@ -147,14 +184,14 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
               Icon(Icons.search_off, size: 64, color: Colors.grey[400]),
               const SizedBox(height: 16),
               const Text(
-                "Nenhuma questão encontrada para esta categoria.",
+                "Nenhuma questão encontrada.",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),
-                child: const Text("Voltar e Escolher Outra"),
+                child: const Text("Voltar"),
               )
             ],
           ),
@@ -182,7 +219,7 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Badge da Categoria Colorido
+            // Badge da Categoria
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
@@ -193,7 +230,7 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
                   border: Border.all(color: badgeColor.withOpacity(0.5), width: 1),
                 ),
                 child: Text(
-                  question.category.displayName.toUpperCase(), // Usa o display name aqui também
+                  question.category.displayName.toUpperCase(),
                   style: TextStyle(
                     color: isDark ? Colors.white : badgeColor.withOpacity(1.0),
                     fontSize: 10,
@@ -225,13 +262,13 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
 
             const SizedBox(height: 24),
 
-            // Explicação Técnica
+            // Explicação
             if (_isAnswered)
               _buildExplanationCard(isDark, question),
 
             const SizedBox(height: 30),
 
-            // Botão de Próximo
+            // Botão Próximo
             if (_isAnswered)
               SizedBox(
                 height: 54,
@@ -356,15 +393,15 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
     IconData icon;
 
     if (percentage >= 80) {
-      title = "Excelência Técnica";
+      title = "Excelência";
       resultColor = Colors.green;
       icon = Icons.workspace_premium;
     } else if (percentage >= 60) {
-      title = "Bom Conhecimento";
+      title = "Bom Desempenho";
       resultColor = Colors.blue;
       icon = Icons.thumb_up;
     } else {
-      title = "Revisão Necessária";
+      title = "Revisar Conteúdo";
       resultColor = Colors.orange;
       icon = Icons.warning_amber;
     }
@@ -394,10 +431,10 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
               height: 50,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.pop(context); // Volta para a tela de Setup
+                  Navigator.pop(context); // Volta para a tela anterior (Setup ou Library)
                 },
-                icon: const Icon(Icons.settings),
-                label: const Text("Configurar Novo Treino"),
+                icon: const Icon(Icons.arrow_back),
+                label: const Text("Voltar ao Menu"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: resultColor,
                   foregroundColor: Colors.white,
@@ -411,32 +448,26 @@ class _BiocharQuizScreenState extends State<BiocharQuizScreen> {
     );
   }
 
-  // --- AUXILIAR DE CORES ---
   Color _getCategoryColor(QuestionCategory category, bool isDark) {
     switch (category) {
       case QuestionCategory.risco:
       case QuestionCategory.seguranca: 
         return Colors.red;
-
       case QuestionCategory.agronomia:
       case QuestionCategory.aplicacao:
         return Colors.green;
-
       case QuestionCategory.quimica:
       case QuestionCategory.processo:
       case QuestionCategory.engenharia: 
       case QuestionCategory.tecnologia: 
       case QuestionCategory.carbono:
         return Colors.blue;
-
       case QuestionCategory.regulamentacao:
       case QuestionCategory.certificacao:
       case QuestionCategory.mercado: 
         return Colors.purple;
-
       case QuestionCategory.consultoria:
         return Colors.orange;
-
       default:
         return Colors.grey;
     }

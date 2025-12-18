@@ -1,0 +1,130 @@
+[
+  {
+    "id": "paper_hamada_2024",
+    "title": "Profundidade do Biochar e Lixiviação de Nitrogênio",
+    "author": "Hamada et al., 2024",
+    "description": "Avaliação de como a profundidade de aplicação do biochar altera a física do solo, o crescimento radicular e a perda de nutrientes em solos permeáveis.",
+    "questions": [
+      {
+        "id": "hamada_q1",
+        "category": "manejo_hidrico",
+        "difficulty": "medio",
+        "question": "Qual foi o mecanismo físico observado por Hamada que tornou a aplicação superficial (0-5 cm) a melhor estratégia de manejo hídrico?",
+        "options": [
+          "Aumentou a infiltração de água, lavando os sais do solo.",
+          "Reduziu a evaporação da água do solo, preservando a umidade nas camadas inferiores.",
+          "Criou uma barreira impermeável que impediu qualquer entrada de água.",
+          "Aumentou a temperatura do solo, acelerando o metabolismo da planta."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O estudo conclui que o biochar na superfície reduziu a evaporação da água do solo, mantendo o perfil abaixo úmido e reduzindo o estresse hídrico da cultura."
+      },
+      {
+        "id": "hamada_q2",
+        "category": "manejo_nutricional",
+        "difficulty": "dificil",
+        "question": "Por que a incorporação do biochar na camada arável (0-30 cm) resultou no aumento da lixiviação de nitrato, contrariando a expectativa de retenção química?",
+        "options": [
+          "O biochar liberou nitrogênio excessivo durante sua decomposição.",
+          "O aumento da evaporação causou estresse hídrico, inibindo o crescimento das raízes e reduzindo a absorção de nitrogênio pela planta.",
+          "A mistura profunda alterou o pH para níveis ácidos, o que solubilizou todo o nitrato.",
+          "O biochar reagiu com o fertilizante criando compostos voláteis."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A mistura aumentou a evaporação, causando seca superficial. Isso impediu o crescimento das raízes. Com menos raízes absorvendo, o nitrogênio sobrou no solo e acabou sendo lixiviado (aumento de 106,4%)."
+      },
+      {
+        "id": "hamada_q3",
+        "category": "recomendacao_pratica",
+        "difficulty": "facil",
+        "question": "Para agricultores em ilhas subtropicais com solos calcários permeáveis, qual é a recomendação de Hamada para mitigar a poluição de águas subterrâneas?",
+        "options": [
+          "Não utilizar biochar, pois o risco de lixiviação é muito alto.",
+          "Aplicar biochar misturado profundamente (>30 cm) para criar filtros de fundo.",
+          "Aplicar biochar apenas na superfície (0-5 cm) para maximizar a absorção de N e o crescimento da cultura.",
+          "Utilizar biochar apenas se o solo for argiloso."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "A aplicação superficial foi a única que reduziu a lixiviação de nitrato (para 87,7%) e simultaneamente melhorou o crescimento da cultura, sendo a recomendação ideal para sustentabilidade."
+      },
+      {
+        "id": "hamada_q4",
+        "category": "fisiologia_vegetal",
+        "difficulty": "medio",
+        "question": "Qual foi o impacto da aplicação superficial (Tratamento A) na distribuição das raízes ao longo do perfil do solo?",
+        "options": [
+          "As raízes se concentraram apenas nos primeiros 5 cm, onde estava o biochar.",
+          "Houve aumento da densidade de raízes em todas as profundidades, especialmente entre 10-20 cm.",
+          "As raízes morreram nas camadas profundas devido à falta de oxigênio.",
+          "Não houve diferença significativa na distribuição radicular em comparação ao controle."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Devido à conservação da umidade proporcionada pela cobertura superficial, as raízes conseguiram crescer vigorosamente em profundidade, apresentando maior densidade que o controle em todo o perfil."
+      }
+    ]
+  },
+  {
+    "id": "paper_gaurav_2025",
+    "title": "Biochar e Arquitetura Radicular do Milho",
+    "author": "Gaurav et al., 2025",
+    "description": "Estudo sobre como a incorporação profunda de biochar altera a morfologia das raízes, a fisiologia da planta e a disponibilidade de nutrientes em solo franco-arenoso.",
+    "questions": [
+      {
+        "id": "gaurav_q1",
+        "category": "recomendacao_manejo",
+        "difficulty": "facil",
+        "question": "Para maximizar a biomassa e o volume radicular do milho em solos franco-arenosos, qual foi a estratégia de manejo mais eficiente identificada por Gaurav?",
+        "options": [
+          "Aplicação superficial apenas (0-5 cm).",
+          "Incorporação profunda e uniforme até 20 cm (Tratamento T5).",
+          "Aplicação localizada na cova de plantio.",
+          "Não aplicar biochar, pois o controle apresentou melhores raízes."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O tratamento T5 (20 cm) registrou os maiores aumentos em comprimento (+48,2%) e biomassa seca (+56,7%) das raízes, criando um ambiente de rizosfera ideal em profundidade."
+      },
+      {
+        "id": "gaurav_q2",
+        "category": "morfologia_vegetal",
+        "difficulty": "medio",
+        "question": "Como a incorporação profunda de biochar alterou o ângulo de crescimento das raízes (arquitetura radicular) em comparação ao controle?",
+        "options": [
+          "As raízes ficaram mais superficiais e espalhadas (ângulo maior) para buscar oxigênio.",
+          "O ângulo não sofreu alteração significativa.",
+          "As raízes tornaram-se mais íngremes/verticais (ângulo menor), pois encontraram água e nutrientes facilmente em profundidade.",
+          "As raízes cresceram horizontalmente devido à barreira física do biochar."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "No controle, as raízes se espalharam (ângulo de 56,7°) procurando recursos. Com biochar profundo, o ângulo reduziu para 39,0° (mais vertical), indicando menor gasto energético para captar nutrientes."
+      },
+      {
+        "id": "gaurav_q3",
+        "category": "fisiologia_hídrica",
+        "difficulty": "medio",
+        "question": "Qual mecanismo fisiológico explicou a maior tolerância à seca nos tratamentos com biochar profundo, mesmo sem medição física direta do solo?",
+        "options": [
+          "Aumento da espessura da cutícula da folha.",
+          "Aumento significativo do Conteúdo Relativo de Água (RWC) nas folhas e raízes.",
+          "Fechamento permanente dos estômatos.",
+          "Redução da área foliar para evitar transpiração."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O estudo demonstrou que o biochar agiu como uma 'esponja' na zona radicular, aumentando o RWC das folhas em 39% no tratamento T5 comparado ao controle."
+      },
+      {
+        "id": "gaurav_q4",
+        "category": "bioquimica_solo",
+        "difficulty": "dificil",
+        "question": "A análise molecular (GC-MS) revelou que a incorporação profunda de biochar aumentou a presença de qual composto ligado ao metabolismo lipídico e resistência ao estresse?",
+        "options": [
+          "Estearato de Metila",
+          "Glifosato",
+          "Ácido Acético",
+          "Etanol"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "O teor de Estearato de Metila aumentou progressivamente com a profundidade da aplicação (de 10,26% no controle para 14,65% no T5), indicando melhor resposta metabólica e saúde da planta."
+      }
+    ]
+  }
+]

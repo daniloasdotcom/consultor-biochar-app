@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/question_model.dart'; // Certifique-se de que o import está correto
+import '../models/question_model.dart'; 
 import '../pages/biochar.quiz.page.dart';
 
 class QuizSetupScreen extends StatefulWidget {
@@ -68,7 +68,6 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
                    icon: Icon(Icons.arrow_drop_down_circle, color: Colors.green[700]),
                    hint: Text("Todas as Categorias", style: TextStyle(color: textColor)),
                    items: [
-                     // Opção "Todas"
                      DropdownMenuItem(
                        value: null,
                        child: Row(
@@ -79,14 +78,11 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
                          ],
                        ),
                      ),
-                     // Gera a lista baseada no ENUM
                      ...QuestionCategory.values.map((category) {
-                       // Removemos a categoria 'geral' da lista de seleção específica se desejar, 
-                       // ou mantemos todas. Aqui mantive todas.
                        return DropdownMenuItem(
                          value: category,
                          child: Text(
-                           category.displayName, // Requer a extension no model
+                           category.displayName,
                            style: TextStyle(color: textColor),
                          ),
                        );
@@ -130,7 +126,7 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
                   Slider(
                     value: _numberOfQuestions,
                     min: 5,
-                    max: 50,
+                    max: 50, // Ajuste conforme seu banco de questões crescer
                     divisions: 9,
                     activeColor: Colors.green[700],
                     inactiveColor: isDark ? Colors.grey[800] : Colors.grey[300],
@@ -161,7 +157,10 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
                       builder: (context) => BiocharQuizScreen(
                         onToggleTheme: widget.onToggleTheme,
                         totalQuestions: _numberOfQuestions.round(),
-                        categoryFilter: _selectedCategory, // Passamos a escolha aqui!
+                        categoryFilter: _selectedCategory,
+                        // AQUI ESTÁ A MUDANÇA:
+                        // Fixamos o arquivo principal, pois os Papers tem sua própria tela agora.
+                        questionsAssetPath: 'assets/questions.json', 
                       ),
                     ),
                   );

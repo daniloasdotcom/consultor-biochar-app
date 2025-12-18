@@ -421,212 +421,142 @@
   },
   {
     "id": "31",
-    "category": "quimica",
-    "difficulty": "muito_dificil",
-    "question": "Segundo Lawrinenko e Banik (2018), qual o grupo funcional responsável pela Capacidade de Troca Aniónica (AEC) estável em pHs elevados, encontrada em biochars produzidos a altas temperaturas (>700 °C)?",
+    "category": "agronomia",
+    "difficulty": "medio",
+    "question": "Qual é a principal causa da 'Fome de Nitrogênio' temporária que pode ocorrer logo após a aplicação de biocarvão fresco no solo?",
     "options": [
-      "Grupos carboxílicos desprotonados",
-      "Oxónios em ponte (bridging oxonium) em estruturas heterocíclicas",
-      "Oxónios não-ponte (non-bridging) hidrolisáveis",
-      "Grupos fenólicos ácidos"
+      "A toxidez direta do carbono nas raízes",
+      "A alta razão C/N do biochar que estimula a imobilização microbiana do nitrogênio disponível",
+      "A liberação excessiva de amônia pelo biochar",
+      "O bloqueio físico dos poros que impede a nitrificação"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Biochars de alta temperatura desenvolvem estruturas aromáticas condensadas com oxigénio em anéis heterocíclicos (oxónios em ponte). Estes são estericamente protegidos e resistem à hidrólise alcalina, garantindo uma carga positiva (AEC) estável, ao contrário dos oxónios não-ponte formados a temperaturas moderadas."
+    "explanation": "Biochars com alta razão C/N e baixa carga de nutrientes podem estimular os microrganismos a consumir o N do solo para degradar a matéria orgânica lábil (efeito priming), competindo temporariamente com a planta."
   },
   {
     "id": "32",
-    "category": "tecnologia",
-    "difficulty": "muito_dificil",
-    "question": "No contexto de biochars 'engenheirados' (Dey et al., 2023), qual a combinação de tratamentos foi identificada como a mais eficaz para aumentar simultaneamente a CTC e a AEC em biochar de palha de arroz?",
+    "category": "agronomia",
+    "difficulty": "facil",
+    "question": "Em qual tipo de solo a aplicação de biocarvão tende a apresentar os benefícios agronômicos mais expressivos e imediatos?",
     "options": [
-      "Ativação física com vapor de água seguida de lavagem",
-      "Oxidação com Ozono (O₃) seguida de dopagem com Ferro (HCl-FeCl₃)",
-      "Lavagem ácida simples com HCl para remoção de cinzas",
-      "Pirólise rápida em atmosfera de Azoto puro"
+      "Solos argilosos e férteis (ex: Latossolo Roxo eutrófico)",
+      "Solos orgânicos (ex: Turfeiras)",
+      "Solos arenosos, ácidos e com baixa CTC",
+      "Solos alagados naturalmente"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "O tratamento com Ozono introduz grupos funcionais oxigenados (aumentando a CTC), enquanto a modificação com Ferro cria superfícies de carga positiva (aumentando a AEC), resultando num material bifuncional superior para retenção simultânea de amónio e nitratos."
+    "correctAnswerIndex": 2,
+    "explanation": "Solos arenosos e pobres se beneficiam drasticamente do aumento da retenção de água e nutrientes (CTC) proporcionado pelo biochar, enquanto em solos já férteis o impacto marginal é menor."
   },
   {
     "id": "33",
     "category": "agronomia",
     "difficulty": "dificil",
-    "question": "Segundo López et al. (2023), qual é o efeito da co-aplicação superficial de biochar com calcário dolomítico em solos de cacau?",
+    "question": "Como o biocarvão influencia a associação com fungos micorrízicos arbusculares (FMA)?",
     "options": [
-      "O biochar imobiliza o cálcio na superfície, impedindo a correção do pH em profundidade.",
-      "O biochar aumenta a mobilidade vertical da alcalinidade, reduzindo o Cádmio (Cd) disponível até 40 cm de profundidade.",
-      "O biochar reage com o magnésio formando precipitados insolúveis que bloqueiam os poros.",
-      "Não há interação química relevante entre o biochar e a mobilidade do calcário."
+      "Inibe a colonização por liberar compostos antifúngicos",
+      "Não tem interação comprovada",
+      "Geralmente favorece a colonização, pois os poros servem de refúgio contra predadores e a alteração físico-química estimula as hifas",
+      "Substitui a função das micorrizas, tornando-as desnecessárias"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "A aplicação conjunta facilita o transporte de iões alcalinos (Ca, Mg) e carbono orgânico dissolvido para camadas subsuperficiais, elevando o pH em profundidade e promovendo a imobilização do Cádmio nessas zonas, reduzindo a sua absorção pela planta."
+    "correctAnswerIndex": 2,
+    "explanation": "A estrutura porosa do biochar atua como micro-habitat protegido para hifas e esporos, além de alterar a disponibilidade de P e sinalização química que pode estimular a simbiose."
   },
   {
     "id": "34",
-    "category": "aplicacao",
-    "difficulty": "medio",
-    "question": "Em relação à profundidade de aplicação do biochar em cultura de arroz de sequeiro (Hamada et al., 2024), qual foi a conclusão sobre a lixiviação de nitrogénio?",
+    "category": "agronomia",
+    "difficulty": "dificil",
+    "question": "Qual é o impacto agronômico da aplicação de altas doses de biocarvão sobre a eficiência de herbicidas pré-emergentes?",
     "options": [
-      "A incorporação profunda (camada arável) é a mais eficiente para reter nitratos.",
-      "A aplicação superficial (0-5 cm) reduziu o stress hídrico e a lixiviação de nitratos melhor que a incorporação profunda.",
-      "A aplicação em profundidade aumentou a lixiviação de amónio, mas reduziu a de nitratos.",
-      "A profundidade de aplicação não teve impacto significativo na lixiviação."
+      "Aumenta a eficiência, exigindo menores doses",
+      "Pode reduzir a eficiência devido à forte adsorção (sorção) das moléculas do herbicida no carbono, inativando-as",
+      "Provoca a fitotoxidez do herbicida na cultura",
+      "Acelera a volatilização do produto"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "A incorporação profunda causou a secagem da camada superficial do solo, induzindo stress hídrico que prejudicou a absorção de azoto pelas raízes, aumentando a lixiviação. A aplicação superficial manteve a humidade do solo e a eficiência radicular, reduzindo as perdas de N."
+    "explanation": "A alta área superficial e a afinidade química do biochar podem 'sequestrar' moléculas orgânicas como herbicidas, reduzindo sua biodisponibilidade e eficácia no controle de daninhas."
   },
   {
     "id": "35",
-    "category": "producao",
-    "difficulty": "dificil",
-    "question": "De acordo com Tan et al. (2017), qual a vantagem da pirólise em atmosfera de CO₂ a 400 °C para a qualidade agronómica do biochar de palha de arroz?",
+    "category": "agronomia",
+    "difficulty": "medio",
+    "question": "Qual é o efeito imediato da incorporação de biocarvão na densidade global do solo?",
     "options": [
-      "Elimina completamente o potássio da matriz de carbono através da volatilização.",
-      "Favorece a preservação do potássio em formas iónicas disponíveis (KCl, K₂SO₄) e aumenta a área superficial.",
-      "Reduz a porosidade do material, aumentando a sua densidade aparente.",
-      "Converte todo o carbono lábil em grafite inerte, impedindo a reação no solo."
+      "Aumento da densidade devido ao peso do carbono",
+      "Redução da densidade global, aumentando a porosidade total e a aeração",
+      "Compactação das camadas superficiais",
+      "Nenhuma alteração física significativa"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "A atmosfera de CO₂ atua como um agente de ativação moderada, promovendo a formação de microporos e facilitando a conversão de complexos orgânicos de potássio (Complex-K) em sais solúveis prontamente disponíveis para as plantas."
+    "explanation": "O biocarvão é um material muito poroso e leve (baixa densidade de partícula). Ao ser misturado, ele 'dilui' a matriz do solo mineral, reduzindo a densidade global e facilitando a penetração de raízes."
   },
   {
     "id": "36",
     "category": "agronomia",
-    "difficulty": "muito_dificil",
-    "question": "No estudo de Hamada et al. (2024) com arroz de sequeiro, a aplicação de biochar incorporado na camada arável (0-30 cm) teve um resultado inesperado comparado com a aplicação superficial (0-5 cm). Qual foi esse resultado?",
+    "difficulty": "medio",
+    "question": "Por que o biocarvão é considerado um condicionador de 'liberação lenta' de fósforo (P)?",
     "options": [
-      "Reduziu a lixiviação de nitratos em 50% devido à maior interação com raízes.",
-      "Aumentou a lixiviação de nitratos (>100%) e causou stress hídrico na camada superficial, inibindo o crescimento radicular.",
-      "Não teve efeito significativo na lixiviação, mas aumentou a produtividade.",
-      "Imobilizou totalmente o azoto, causando deficiência severa na cultura."
+      "Porque ele contém muito fósforo em sua estrutura cristalina",
+      "Porque ele acidifica o solo, solubilizando apatitas",
+      "Porque o P adsorvido em sua superfície é liberado gradualmente e o aumento do pH reduz a fixação de P por óxidos de ferro/alumínio do solo",
+      "Porque ele converte P orgânico em inorgânico instantaneamente"
     ],
-    "correctAnswerIndex": 1,
-    "explanation": "A incorporação na camada arável alterou a dinâmica da água, causando secagem frequente da camada superficial (0-10 cm). Isso impediu o desenvolvimento de raízes nessa zona crítica, reduzindo a absorção de azoto pela planta e permitindo que o nitrato fosse lixiviado."
+    "correctAnswerIndex": 2,
+    "explanation": "O biochar atua indiretamente: ao corrigir o pH e complexar Al/Fe, ele diminui a precipitação irreversível do fósforo no solo, mantendo-o disponível por mais tempo."
   },
   {
     "id": "37",
-    "category": "quimica",
-    "difficulty": "dificil",
-    "question": "Qual evidência apresentada por Lawrinenko e Laird (2015) comprova que a Capacidade de Troca Aniónica (AEC) em pH alcalino não depende de grupos nitrogenados?",
+    "category": "agronomia",
+    "difficulty": "facil",
+    "question": "Qual é a vantagem de co-compostar o biocarvão (adicionar à pilha de compostagem) antes de aplicar no campo?",
     "options": [
-      "A deteção de grupos carboxílicos protonados em pH 8.",
-      "O facto de biochars de celulose pura (sem azoto) apresentarem AEC significativa devido a heterociclos de oxigénio (oxónios).",
-      "A correlação direta entre o teor de cinzas e a AEC.",
-      "A ausência de bandas de estiramento C-N no espectro infravermelho."
+      "Reduzir o volume de material para transporte",
+      "Oxidar a superfície do carvão (aumentando a CTC) e carregá-lo com nutrientes e microrganismos, evitando a imobilização no campo",
+      "Eliminar totalmente o carbono fixo",
+      "Transformar o biochar em cinzas"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Biochars produzidos a partir de celulose contêm apenas C, H e O. A existência de AEC neste material, especialmente a pH 8 (onde grupos piridínicos estariam desprotonados), isola os oxónios (anéis aromáticos com O+) como a causa da carga positiva estável."
+    "explanation": "O processo de compostagem acelera o 'envelhecimento' benéfico do biochar, saturando seus poros com nutrientes (N, P, K) do composto e aumentando grupos funcionais, criando um fertilizante organomineral potente."
   },
   {
     "id": "38",
-    "category": "producao",
+    "category": "agronomia",
     "difficulty": "medio",
-    "question": "Comparando biochars de biomassa não-lenhosa (ex: resíduo de beringela) e lenhosa (ex: acácia) produzidos a 600 °C, qual apresenta maior potencial de calagem (CCE) segundo Murtaza et al. (2024)?",
+    "question": "Em sistemas irrigados, como o biocarvão contribui para a economia de água (Water Use Efficiency)?",
     "options": [
-      "O lenhoso, devido à estrutura condensada da lenhina.",
-      "Ambos apresentam o mesmo potencial, pois a temperatura é o único fator relevante.",
-      "O não-lenhoso, devido ao maior teor de cinzas e concentração de minerais alcalinos (K, Mg, Ca).",
-      "O lenhoso, devido à maior área superficial específica."
+      "Aumentando a transpiração das plantas",
+      "Impermeabilizando a superfície do solo",
+      "Aumentando a Capacidade de Campo (retenção de água nos microporos) e a condutividade hidráulica em solos argilosos",
+      "Reduzindo a profundidade das raízes"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Biomassas não-lenhosas (herbáceas/frutos) acumulam mais nutrientes e minerais. Durante a pirólise, estes formam óxidos e carbonatos nas cinzas, conferindo ao biochar um pH e Equivalente de Carbonato de Cálcio (CCE) superiores aos da madeira."
+    "explanation": "O biochar aumenta a retenção de água disponível na zona radicular, permitindo intervalos de rega maiores e reduzindo perdas por percolação profunda ou evaporação."
   },
   {
     "id": "39",
-    "category": "tecnologia",
-    "difficulty": "muito_dificil",
-    "question": "Em biochars modificados com Ferro para retenção de nutrientes (Dey et al., 2023), qual é o principal mecanismo químico responsável pela alta adsorção de fosfato ($PO_{4}^{3-}$)?",
+    "category": "agronomia",
+    "difficulty": "facil",
+    "question": "Qual o risco mecânico associado à aplicação superficial de biocarvão em áreas ventosas sem incorporação?",
     "options": [
-      "Atração eletrostática simples com a superfície de carbono.",
-      "Precipitação física nos microporos sem reação química.",
-      "Troca de ligandos (complexação de esfera interna) com grupos hidroxilo na superfície de oxi-hidróxidos de ferro (FeOOH).",
-      "Oxidação do fosfato a fósforo elementar."
+      "Lixiviação profunda imediata",
+      "Perda por erosão eólica e contaminação do ar (particulados finos)",
+      "Combustão espontânea no solo",
+      "Compactação da superfície"
     ],
-    "correctAnswerIndex": 2,
-    "explanation": "Ao contrário do nitrato, que é retido principalmente por atração eletrostática (esfera externa), o fosfato forma ligações químicas fortes (esfera interna) substituindo grupos -OH na superfície dos óxidos de ferro formados no biochar."
+    "correctAnswerIndex": 1,
+    "explanation": "O pó de biocarvão é muito leve e hidrofóbico quando seco. Se não for incorporado ou umedecido, é facilmente levado pelo vento, representando perda econômica e risco respiratório."
   },
   {
     "id": "40",
     "category": "agronomia",
     "difficulty": "dificil",
-    "question": "De acordo com Gaurav et al. (2025), qual foi o efeito da aplicação profunda de biochar (20 cm) na morfologia radicular do milho em comparação com a aplicação superficial?",
+    "question": "O que explica o aumento da eficiência do uso de fertilizantes nitrogenados (NUE) em solos tratados com biocarvão?",
     "options": [
-      "Reduziu o volume radicular devido à compactação do solo.",
-      "Aumentou significativamente o comprimento (+48%) e volume radicular, promovendo o acesso a água e nutrientes em camadas profundas.",
-      "Não houve alteração estatística na biomassa radicular.",
-      "Concentrou as raízes apenas nos primeiros 5 cm de solo."
+      "O biochar substitui a necessidade de fertilizante N",
+      "A retenção de amônio ($NH_4^+$) na CTC do biochar reduz perdas por lixiviação e a inibição de certas enzimas reduz a volatilização de amônia",
+      "O biochar mata as bactérias desnitrificantes",
+      "O biochar converte todo o N em forma gasosa"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "A aplicação profunda cria 'hotspots' de retenção de água e nutrientes protegidos da evaporação superficial. As raízes proliferam nestas zonas (hidrotropismo/quimiotropismo), resultando num sistema radicular mais robusto e profundo."
-  },
-  {
-    "id": "41",
-    "category": "quimica",
-    "difficulty": "muito_dificil",
-    "question": "Segundo Banik et al. (2018), o que indica um biochar que apresenta um Ponto de Efeito Salino Zero (PZSE) alto, mas um Ponto de Carga Líquida Zero (PZNC) baixo?",
-    "options": [
-      "Predominância de grupos carboxílicos estáveis",
-      "Presença de grupos oxônio 'não-ponte' (non-bridging) que são instáveis e hidrolisáveis",
-      "Alta aromaticidade com grupos oxônio 'em ponte' (bridging) inertes",
-      "Biochar produzido a temperaturas superiores a 800 °C"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "A discrepância entre PZSE alto (indicando potencial positivo) e PZNC baixo (carga líquida negativa) em biochars de média temperatura (500-700°C) revela a existência de grupos oxônio instáveis que se degradam durante a titulação ou medição de pH, não contribuindo para uma AEC permanente."
-  },
-  {
-    "id": "42",
-    "category": "producao",
-    "difficulty": "dificil",
-    "question": "De acordo com Tan et al. (2017), qual é o mecanismo físico-químico que torna a pirólise em atmosfera de CO₂ a 400 °C superior à de N₂ para a fertilidade potássica?",
-    "options": [
-      "O CO₂ oxida o potássio para K₂O",
-      "O CO₂ promove uma 'gasificação suave' que consome carbono amorfo, desbloqueando poros e expondo sais de K antes oclusos",
-      "A atmosfera de CO₂ aumenta a temperatura interna da partícula",
-      "O N₂ forma complexos insolúveis de cianeto de potássio"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "A atmosfera de CO₂ atua como agente de ativação física moderada (Reação de Boudouard), limpando o alcatrão e o carbono desordenado da superfície, o que aumenta a área superficial e a disponibilidade de saída para os íons de potássio."
-  },
-  {
-    "id": "43",
-    "category": "quimica",
-    "difficulty": "medio",
-    "question": "Segundo Gaurav et al. (2025), qual alteração drástica na composição elementar superficial do biochar ocorre após o envelhecimento (aging) no solo?",
-    "options": [
-      "Aumento do teor de Carbono para >80%",
-      "Perda total de Nitrogênio",
-      "O teor de Oxigênio quase duplica (de ~20% para ~36%), reduzindo a razão C/O",
-      "Mineralização completa do esqueleto de carbono"
-    ],
-    "correctAnswerIndex": 2,
-    "explanation": "O processo de envelhecimento no solo expõe o biochar à oxidação biótica e abiótica, inserindo grupos funcionais oxigenados na superfície, o que reduz a percentagem relativa de carbono e aumenta drasticamente a de oxigênio."
-  },
-  {
-    "id": "44",
-    "category": "risco",
-    "difficulty": "dificil",
-    "question": "No estudo de remediação de solos com Cádmio (López et al., 2023), qual foi o principal efeito geoquímico da co-aplicação de biochar e calcário?",
-    "options": [
-      "Volatilização do Cádmio para a atmosfera",
-      "Redução da fração 'Trocável' (Exchangeable) e redistribuição para frações ligadas a carbonatos e matéria orgânica",
-      "Aumento da lixiviação de Cádmio para o lençol freático",
-      "Formação de ligas metálicas de Cádmio-Ferro"
-    ],
-    "correctAnswerIndex": 1,
-    "explanation": "O tratamento combinado aumentou o pH e a CTC, transformando o Cádmio que estava livre (trocável/biodisponível) em formas precipitadas (carbonatos) ou complexadas organicamente, reduzindo sua toxicidade imediata."
-  },
-  {
-    "id": "45",
-    "category": "tecnologia",
-    "difficulty": "muito_dificil",
-    "question": "Qual banda espectral no infravermelho (FTIR) foi identificada por Lawrinenko e Laird (2015) como a assinatura dos heterociclos de oxônio responsáveis pela Capacidade de Troca Aniônica (AEC)?",
-    "options": [
-      "~3400 cm⁻¹ (Estiramento O-H)",
-      "~2900 cm⁻¹ (Estiramento C-H alifático)",
-      "~1590 cm⁻¹ (Estiramento C-O⁺ aromático)",
-      "~1050 cm⁻¹ (Estiramento C-O de polissacarídeos)"
-    ],
-    "correctAnswerIndex": 2,
-    "explanation": "A banda em 1590 cm⁻¹ é característica de vibrações de anéis aromáticos, mas sua intensidade e correlação com a AEC em biochars de alta temperatura (onde grupos carboxílicos já degradaram) indicam a presença de estruturas de oxônio (C-O⁺) estabilizadas por ressonância."
+    "explanation": "O mecanismo duplo de adsorção física/química do amônio e a modulação da atividade microbiana reduzem as principais vias de perda de N (lixiviação e volatilização), mantendo o nutriente na rizosfera."
   }
 ]

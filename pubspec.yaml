@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.19.0
+  flutter_math_fork: ^0.7.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -39,6 +40,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  flutter_launcher_icons: "^0.13.1"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -50,10 +53,18 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_launcher_icons:
+  android: "launcher_icon" # Nome do ícone no Android
+  ios: true # Gerar ícones para iOS
+  image_path: "assets/icon/icon.png" # Caminho para a sua imagem
+  min_sdk_android: 21 # Opcional: define o SDK mínimo
+  remove_alpha_ios: true # Remove transparência para ícones iOS (recomendado)
+  
 # The following section is specific to Flutter packages.
 flutter:
   assets:
       - assets/questions.json
+      - assets/papers.json
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
