@@ -9,57 +9,99 @@
         "id": "hamada_q1",
         "category": "manejo_hidrico",
         "difficulty": "medio",
-        "question": "Qual foi o mecanismo físico observado por Hamada que tornou a aplicação superficial (0-5 cm) a melhor estratégia de manejo hídrico?",
+        "question": "Qual mecanismo físico principal explica por que a aplicação superficial de biochar (0–5 cm) foi a estratégia mais eficiente de manejo hídrico no estudo de Hamada et al. (2024)?",
         "options": [
-          "Aumentou a infiltração de água, lavando os sais do solo.",
-          "Reduziu a evaporação da água do solo, preservando a umidade nas camadas inferiores.",
-          "Criou uma barreira impermeável que impediu qualquer entrada de água.",
-          "Aumentou a temperatura do solo, acelerando o metabolismo da planta."
+          "Aumento da infiltração profunda, reduzindo o tempo de permanência da água no perfil.",
+          "Redução da evaporação superficial, preservando a umidade do solo e mantendo o potencial mátrico em faixa sem estresse.",
+          "Formação de uma camada impermeável que bloqueou o fluxo de água no solo.",
+          "Aumento da temperatura do solo, acelerando a absorção de água pelas raízes."
         ],
         "correctAnswerIndex": 1,
-        "explanation": "O estudo conclui que o biochar na superfície reduziu a evaporação da água do solo, mantendo o perfil abaixo úmido e reduzindo o estresse hídrico da cultura."
+        "explanation": "A aplicação superficial de biochar reduziu a evaporação da água do solo, o que manteve maiores teores de umidade nas camadas subsuperficiais e evitou a ocorrência frequente de estresse hídrico. Isso resultou em melhores condições para o crescimento radicular e maior uso produtivo da água pela cultura."
       },
       {
         "id": "hamada_q2",
         "category": "manejo_nutricional",
         "difficulty": "dificil",
-        "question": "Por que a incorporação do biochar na camada arável (0-30 cm) resultou no aumento da lixiviação de nitrato, contrariando a expectativa de retenção química?",
+        "question": "Por que a incorporação do biochar na camada arável (0–30 cm) resultou em maior lixiviação de nitrato, apesar do potencial do biochar para retenção química de nutrientes?",
         "options": [
-          "O biochar liberou nitrogênio excessivo durante sua decomposição.",
-          "O aumento da evaporação causou estresse hídrico, inibindo o crescimento das raízes e reduzindo a absorção de nitrogênio pela planta.",
-          "A mistura profunda alterou o pH para níveis ácidos, o que solubilizou todo o nitrato.",
-          "O biochar reagiu com o fertilizante criando compostos voláteis."
+          "O biochar liberou grandes quantidades de nitrogênio durante sua decomposição.",
+          "O aumento da evaporação superficial induziu estresse hídrico, restringindo o crescimento radicular e reduzindo a absorção de nitrogênio pelas plantas.",
+          "A incorporação profunda acidificou o solo, aumentando a mobilidade do nitrato.",
+          "O biochar reagiu quimicamente com o fertilizante, formando compostos altamente solúveis."
         ],
         "correctAnswerIndex": 1,
-        "explanation": "A mistura aumentou a evaporação, causando seca superficial. Isso impediu o crescimento das raízes. Com menos raízes absorvendo, o nitrogênio sobrou no solo e acabou sendo lixiviado (aumento de 106,4%)."
+        "explanation": "A aplicação do biochar em toda a camada arável aumentou a evaporação e causou estresse hídrico na zona superficial, limitando o crescimento das raízes. Com menor volume radicular ativo, a absorção de nitrogênio foi reduzida, favorecendo a lixiviação de NO₃⁻, que aumentou em relação ao controle."
       },
       {
         "id": "hamada_q3",
         "category": "recomendacao_pratica",
         "difficulty": "facil",
-        "question": "Para agricultores em ilhas subtropicais com solos calcários permeáveis, qual é a recomendação de Hamada para mitigar a poluição de águas subterrâneas?",
+        "question": "Com base nos resultados de Hamada et al. (2024), qual estratégia de aplicação de biochar é mais indicada para reduzir a contaminação de águas subterrâneas em sistemas agrícolas subtropicais?",
         "options": [
-          "Não utilizar biochar, pois o risco de lixiviação é muito alto.",
-          "Aplicar biochar misturado profundamente (>30 cm) para criar filtros de fundo.",
-          "Aplicar biochar apenas na superfície (0-5 cm) para maximizar a absorção de N e o crescimento da cultura.",
-          "Utilizar biochar apenas se o solo for argiloso."
+          "Evitar o uso de biochar em solos agrícolas devido ao risco de lixiviação.",
+          "Aplicar biochar em profundidade (>30 cm) para atuar como filtro físico.",
+          "Aplicar biochar superficialmente (0–5 cm), favorecendo a retenção de nitrogênio e o crescimento radicular.",
+          "Aplicar biochar apenas em solos argilosos, independentemente da profundidade."
         ],
         "correctAnswerIndex": 2,
-        "explanation": "A aplicação superficial foi a única que reduziu a lixiviação de nitrato (para 87,7%) e simultaneamente melhorou o crescimento da cultura, sendo a recomendação ideal para sustentabilidade."
+        "explanation": "A aplicação superficial foi a única estratégia que reduziu a lixiviação de nitrato e, simultaneamente, promoveu maior crescimento da cultura, configurando-se como a opção mais sustentável segundo o estudo."
       },
       {
         "id": "hamada_q4",
         "category": "fisiologia_vegetal",
         "difficulty": "medio",
-        "question": "Qual foi o impacto da aplicação superficial (Tratamento A) na distribuição das raízes ao longo do perfil do solo?",
+        "question": "Como a aplicação superficial de biochar (Tratamento A) afetou a distribuição do sistema radicular ao longo do perfil do solo?",
         "options": [
-          "As raízes se concentraram apenas nos primeiros 5 cm, onde estava o biochar.",
-          "Houve aumento da densidade de raízes em todas as profundidades, especialmente entre 10-20 cm.",
-          "As raízes morreram nas camadas profundas devido à falta de oxigênio.",
-          "Não houve diferença significativa na distribuição radicular em comparação ao controle."
+          "Concentrou o sistema radicular apenas na camada superficial.",
+          "Promoveu aumento da densidade radicular em todas as profundidades, especialmente entre 10 e 20 cm.",
+          "Causou morte radicular em profundidade por deficiência de oxigênio.",
+          "Não alterou significativamente a distribuição radicular em relação ao controle."
         ],
         "correctAnswerIndex": 1,
-        "explanation": "Devido à conservação da umidade proporcionada pela cobertura superficial, as raízes conseguiram crescer vigorosamente em profundidade, apresentando maior densidade que o controle em todo o perfil."
+        "explanation": "A redução do estresse hídrico superficial permitiu o bom estabelecimento inicial das raízes, o que favoreceu sua expansão para camadas mais profundas, resultando em maior densidade radicular em todo o perfil do solo."
+      },
+      {
+        "id": "hamada_q5",
+        "category": "fisica_do_solo",
+        "difficulty": "dificil",
+        "question": "Por que os efeitos positivos da aplicação superficial de biochar observados por Hamada et al. podem não se repetir em solos de textura mais grosseira?",
+        "options": [
+          "Porque o biochar perde sua estabilidade química em solos arenosos.",
+          "Porque solos arenosos não apresentam atividade biológica suficiente.",
+          "Porque a camada subsuperficial em solos grosseiros tem baixa capacidade de retenção, favorecendo perdas por percolação.",
+          "Porque a evaporação superficial é sempre dominante em solos arenosos."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Em solos mais grosseiros, a menor proporção de microporos limita o armazenamento de água na subsuperfície. Assim, mesmo com a redução da evaporação superficial por efeito de proteção física da camada superficial, a água tende a ser rapidamente perdida por percolação profunda, resultando em um reservatório hídrico limitado."
+      },
+      {
+        "id": "hamada_q6",
+        "category": "ecofisiologia",
+        "difficulty": "medio",
+        "question": "Por que a concentração de biochar na camada superficial (0–5 cm) favoreceu o estabelecimento inicial das plântulas em comparação aos outros tratamentos?",
+        "options": [
+          "Porque aumentou a temperatura do solo superficial.",
+          "Porque criou melhores condições locais de retenção de água e disponibilidade de nutrientes na zona inicial das raízes.",
+          "Porque reduziu completamente a lixiviação de nutrientes.",
+          "Porque inibiu a atividade microbiana concorrente."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A maior concentração de biochar na zona inicial de crescimento radicular pode ter melhorado as condições químicas (pH e nutrientes, ainda que ele não apresentam dados iniciais das condições do solo com biocarvão antes do experimento) (mas não necessáriamente físicas, pois os autores relatam que não houve melhorias significativas na condição física de retenção de água), favorecendo o estabelecimento inicial da cultura e o crescimento radicular subsequente."
+      },
+      {
+        "id": "hamada_q7",
+        "category": "limitacoes_extrapolacao",
+        "difficulty": "dificil",
+        "question": "Apesar dos benefícios observados com a aplicação superficial de biochar (0–5 cm), qual limitação importante deve ser considerada ao extrapolar os resultados de Hamada et al. (2024) para condições reais de campo?",
+        "options": [
+          "O biochar perde completamente sua capacidade de retenção de nutrientes quando exposto à luz solar.",
+          "O sistema experimental não considerou processos erosivos, que podem resultar em perdas físicas de biochar aplicado superficialmente.",
+          "A aplicação superficial impede o desenvolvimento radicular em profundidade em solos agrícolas.",
+          "A lixiviação de nitrogênio aumenta inevitavelmente em sistemas com biochar superficial."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Embora a aplicação superficial de biocarvão tenha apresentado vantagens claras em termos de conservação da água no solo e redução da lixiviação de nitrogênio, essa estratégia deve ser avaliada com cautela em condições de campo. A concentração do biocarvão na superfície pode aumentar sua suscetibilidade a perdas por erosão hídrica e eólica, especialmente em áreas declivosas ou sob eventos de chuva intensa."
       }
     ]
   },
@@ -71,59 +113,101 @@
     "questions": [
       {
         "id": "gaurav_q1",
-        "category": "recomendacao_manejo",
-        "difficulty": "facil",
-        "question": "Para maximizar a biomassa e o volume radicular do milho em solos franco-arenosos, qual foi a estratégia de manejo mais eficiente identificada por Gaurav?",
+        "category": "manejo_hidrico",
+        "difficulty": "medio",
+        "question": "Qual mecanismo físico explica por que a incorporação profunda de biochar (15–20 cm) resultou em melhor desempenho hídrico das plantas no estudo de Gaurav et al. (2025)?",
         "options": [
-          "Aplicação superficial apenas (0-5 cm).",
-          "Incorporação profunda e uniforme até 20 cm (Tratamento T5).",
-          "Aplicação localizada na cova de plantio.",
-          "Não aplicar biochar, pois o controle apresentou melhores raízes."
+          "Redução da evaporação superficial do solo.",
+          "Aumento da capacidade de retenção de água exatamente na zona de maior atividade radicular em um solo de textura arenosa.",
+          "Formação de uma camada impermeável que bloqueou a percolação.",
+          "Aumento da temperatura do solo em profundidade."
         ],
         "correctAnswerIndex": 1,
-        "explanation": "O tratamento T5 (20 cm) registrou os maiores aumentos em comprimento (+48,2%) e biomassa seca (+56,7%) das raízes, criando um ambiente de rizosfera ideal em profundidade."
+        "explanation": "Em solos arenosos, a água aplicada superficialmente é rapidamente perdida por percolação. A incorporação profunda do biochar aumentou a retenção de água na zona radicular ativa, melhorando o estado hídrico da planta."
       },
       {
         "id": "gaurav_q2",
-        "category": "morfologia_vegetal",
-        "difficulty": "medio",
-        "question": "Como a incorporação profunda de biochar alterou o ângulo de crescimento das raízes (arquitetura radicular) em comparação ao controle?",
+        "category": "fisica_do_solo",
+        "difficulty": "dificil",
+        "question": "Por que a estratégia de aplicação superficial de biochar, eficiente em Hamada et al. (2024), não apresentou o mesmo potencial no estudo de Gaurav et al. (2025)?",
         "options": [
-          "As raízes ficaram mais superficiais e espalhadas (ângulo maior) para buscar oxigênio.",
-          "O ângulo não sofreu alteração significativa.",
-          "As raízes tornaram-se mais íngremes/verticais (ângulo menor), pois encontraram água e nutrientes facilmente em profundidade.",
-          "As raízes cresceram horizontalmente devido à barreira física do biochar."
+          "Porque o biochar perde estabilidade química em solos arenosos.",
+          "Porque a baixa capacidade de retenção hídrica da camada superficial em solos arenosos limita o efeito de proteção contra evaporação.",
+          "Porque o milho não responde à melhoria da umidade superficial.",
+          "Porque a aplicação superficial inibe a absorção de nutrientes."
         ],
-        "correctAnswerIndex": 2,
-        "explanation": "No controle, as raízes se espalharam (ângulo de 56,7°) procurando recursos. Com biochar profundo, o ângulo reduziu para 39,0° (mais vertical), indicando menor gasto energético para captar nutrientes."
+        "correctAnswerIndex": 1,
+        "explanation": "Em solos arenosos, a camada superficial não atua como reservatório hídrico. Assim, mesmo com proteção contra evaporação, a água é rapidamente perdida por percolação, tornando a aplicação superficial menos eficiente."
       },
       {
         "id": "gaurav_q3",
-        "category": "fisiologia_hídrica",
+        "category": "fisiologia_vegetal",
         "difficulty": "medio",
-        "question": "Qual mecanismo fisiológico explicou a maior tolerância à seca nos tratamentos com biochar profundo, mesmo sem medição física direta do solo?",
+        "question": "Qual foi o principal efeito da incorporação profunda de biochar sobre a arquitetura radicular do milho?",
         "options": [
-          "Aumento da espessura da cutícula da folha.",
-          "Aumento significativo do Conteúdo Relativo de Água (RWC) nas folhas e raízes.",
-          "Fechamento permanente dos estômatos.",
-          "Redução da área foliar para evitar transpiração."
+          "Concentração das raízes apenas na camada superficial.",
+          "Aumento do comprimento, volume e biomassa radicular, com raízes mais verticais e profundas.",
+          "Redução do crescimento radicular devido à compactação.",
+          "Ausência de efeito sobre a morfologia das raízes."
         ],
         "correctAnswerIndex": 1,
-        "explanation": "O estudo demonstrou que o biochar agiu como uma 'esponja' na zona radicular, aumentando o RWC das folhas em 39% no tratamento T5 comparado ao controle."
+        "explanation": "A presença do biochar na zona profunda favoreceu o crescimento radicular em profundidade, resultando em maior comprimento, volume e biomassa das raízes."
       },
       {
         "id": "gaurav_q4",
-        "category": "bioquimica_solo",
-        "difficulty": "dificil",
-        "question": "A análise molecular (GC-MS) revelou que a incorporação profunda de biochar aumentou a presença de qual composto ligado ao metabolismo lipídico e resistência ao estresse?",
+        "category": "manejo_nutricional",
+        "difficulty": "medio",
+        "question": "Como a incorporação profunda de biochar influenciou a nutrição mineral das plantas no estudo de Gaurav et al. (2025)?",
         "options": [
-          "Estearato de Metila",
-          "Glifosato",
-          "Ácido Acético",
-          "Etanol"
+          "Reduziu a disponibilidade de nutrientes devido à adsorção excessiva.",
+          "Aumentou a disponibilidade de macro e micronutrientes na zona radicular ativa.",
+          "Não alterou a disponibilidade de nutrientes no solo.",
+          "Promoveu perdas por lixiviação de nutrientes."
         ],
-        "correctAnswerIndex": 0,
-        "explanation": "O teor de Estearato de Metila aumentou progressivamente com a profundidade da aplicação (de 10,26% no controle para 14,65% no T5), indicando melhor resposta metabólica e saúde da planta."
+        "correctAnswerIndex": 1,
+        "explanation": "O biochar em profundidade aumentou a disponibilidade de nutrientes como N, P, K, Mg e micronutrientes, coincidindo com a região mais explorada pelas raízes."
+      },
+      {
+        "id": "gaurav_q5",
+        "category": "ecofisiologia",
+        "difficulty": "dificil",
+        "question": "Qual evidência ecofisiológica indica que a incorporação profunda de biochar criou um ambiente radicular menos estressante para as plantas?",
+        "options": [
+          "Redução da clorofila total.",
+          "Aumento do teor relativo de água (RWC) e do índice de estabilidade de membranas (MSI).",
+          "Aumento da temperatura foliar.",
+          "Diminuição da área foliar."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O aumento simultâneo do teor relativo de água (RWC) e do índice de estabilidade de membranas (MSI) constitui uma evidência ecofisiológica integrada de que a incorporação de biochar até 15–20 cm criou um ambiente radicular funcionalmente menos estressante para as plantas.\n\nO RWC reflete diretamente o estado hídrico dos tecidos vegetais e integra múltiplos processos, incluindo a disponibilidade de água no solo, a eficiência do sistema radicular na absorção dessa água e a capacidade de transporte no xilema. Valores mais elevados de RWC indicam maior turgor celular e menor limitação hídrica ao metabolismo da planta. Já o MSI avalia a integridade das membranas celulares, sendo sensível a estresses que promovem danos oxidativos e peroxidação lipídica, como o estresse hídrico e nutricional. O aumento do MSI observado nos tratamentos com incorporação mais profunda de biochar indica menor dano celular e maior estabilidade fisiológica.\n\nNo contexto do estudo de Gaurav et al. (2025), esses dois indicadores devem ser interpretados como respostas funcionais da planta a um ambiente radicular mais favorável, resultante da melhoria integrada das condições físicas e químicas do solo ao longo do perfil até 20 cm. Em solos de textura arenosa, como o utilizado no experimento, a baixa capacidade intrínseca de retenção de água torna a zona radicular particularmente sensível a déficits hídricos. A incorporação contínua de biochar desde a superfície até 15–20 cm provavelmente aumentou a retenção local de água e nutrientes exatamente na região de maior atividade radicular, reduzindo flutuações hídricas e o estresse associado.\n\nÉ importante destacar que o estudo não mediu diretamente propriedades hidráulicas do solo, como curvas de retenção de água ou potencial mátrico. Portanto, a conclusão de “maior retenção de água” não se baseia exclusivamente em evidência física direta do solo, mas sim em respostas fisiológicas consistentes da planta, que se comportou como se estivesse sob menor estresse hídrico. Nesse sentido, RWC e MSI funcionam como indicadores integradores do ambiente radicular, refletindo o efeito combinado do biochar sobre a disponibilidade de recursos e a eficiência de absorção pelas raízes.\n\nAssim, o aumento de RWC e MSI não apenas indica melhor estado hídrico e maior integridade celular, mas também reforça a ideia de que a incorporação profunda de biochar promoveu um ambiente radicular mais estável e menos limitante, o que se traduziu em melhor crescimento radicular e desempenho da parte aérea."
+      },
+      {
+        "id": "gaurav_q6",
+        "category": "metodologia",
+        "difficulty": "dificil",
+        "question": "Qual limitação metodológica deve ser considerada ao interpretar os resultados de retenção de água no estudo de Gaurav et al. (2025)?",
+        "options": [
+          "A ausência de medições diretas de crescimento radicular.",
+          "A não quantificação direta de curvas de retenção de água do solo (θ–h).",
+          "A falta de análise estatística.",
+          "A ausência de fertilização nitrogenada."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Embora os autores discutam maior retenção de água, não foram medidas curvas θ–h. As conclusões baseiam-se em respostas fisiológicas da planta, e não em medições hidráulicas diretas."
+      },
+      {
+        "id": "gaurav_q7",
+        "category": "limitacoes_extrapolacao",
+        "difficulty": "dificil",
+        "question": "Qual fator limita a extrapolação direta dos resultados de Gaurav et al. (2025) para sistemas agrícolas em larga escala?",
+        "options": [
+          "O uso de milho como cultura modelo.",
+          "O cultivo em sistema de rizobox, que não representa completamente as condições de campo.",
+          "A profundidade excessiva de aplicação do biochar.",
+          "A curta duração do experimento."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O uso de rizobox permite observação detalhada das raízes, mas elimina processos importantes de campo, como heterogeneidade do solo, tráfego de máquinas e dinâmica real da água."
       }
     ]
   }
