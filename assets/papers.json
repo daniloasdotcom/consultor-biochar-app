@@ -210,5 +210,293 @@
         "explanation": "O uso de rizobox permite observação detalhada das raízes, mas elimina processos importantes de campo, como heterogeneidade do solo, tráfego de máquinas e dinâmica real da água."
       }
     ]
+  },
+  {
+    "id": "paper_weng_2022",
+    "title": "Visualização Microespectroscópica e o Teto de Carbono do Solo",
+    "author": "Weng et al., 2022",
+    "description": "Estudo sobre como a aplicação sequencial de biochar eleva o limite de saturação de carbono em Ferralsols, utilizando técnicas avançadas de imagem e isótopos.",
+    "questions": [
+      {
+        "id": "weng_q1",
+        "category": "tecnicas_isotopicas",
+        "difficulty": "dificil",
+        "question": "No estudo, a técnica de marcação de pulso com ¹³CO₂ foi fundamental para distinguir as fontes de carbono. Qual foi o papel específico dessa técnica na quantificação do 'priming' negativo observado?",
+        "options": [
+          "Permitiu separar o carbono derivado da respiração das raízes (rizodepósitos) do carbono derivado da decomposição da matéria orgânica nativa do solo e do biochar.",
+          "Foi utilizada exclusivamente para medir a taxa de fotossíntese das plantas de azevém, sem relação com o carbono do solo.",
+          "Serviu para datar a idade do biochar aplicado há 9,5 anos versus o biochar aplicado recentemente.",
+          "Identificou a composição química do biochar através da absorção diferencial de isótopos pesados pela estrutura porosa."
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "A marcação com ¹³CO₂ permitiu rastrear o carbono recém-fixado pelas plantas (rizodepósitos). Ao medir a assinatura isotópica (δ¹³C) da respiração do solo, os autores puderam calcular, via equações de partição, quanto CO₂ vinha da decomposição do solo nativo versus das raízes/biochar, revelando que o tratamento Histórico+Recente reduziu a mineralização do carbono nativo (priming negativo)."
+      },
+      {
+        "id": "weng_q2",
+        "category": "microscopia_avancada",
+        "difficulty": "dificil",
+        "question": "Os autores utilizaram FIB-SEM-EDS (Focused Ion Beam - Scanning Electron Microscopy - Energy Dispersive Spectroscopy) em 3D. Qual fenômeno crucial para a estabilização do carbono essa técnica permitiu visualizar dentro dos microagregados?",
+        "options": [
+          "A presença de grandes macroporos que facilitam a entrada de oxigênio e aumentam a decomposição microbiana.",
+          "A distribuição espacial de carbono, silício, alumínio e ferro, mostrando rizodepósitos protegidos por minerais ricos em Fe e Al dentro da estrutura do agregado.",
+          "A ausência total de interação entre a superfície do biochar e a matriz do solo adjacente.",
+          "A formação de cristais de carbono puro sem associação com a fase mineral do solo."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A técnica FIB-SEM-EDS permitiu a reconstrução tridimensional de agregados intactos, fornecendo evidência visual direta de que o carbono (incluindo rizodepósitos) estava co-localizado e protegido por minerais do solo (Fe, Al, Si), formando complexos organominerais que impedem o acesso microbiano."
+      },
+      {
+        "id": "weng_q3",
+        "category": "espectroscopia_SXR",
+        "difficulty": "medio",
+        "question": "A espectroscopia de raios-X moles (SXR) foi usada para analisar a química da superfície do biochar. Qual diferença química fundamental foi observada entre o biochar 'envelhecido' (9,5 anos) e o biochar 'recente' (1,3 anos)?",
+        "options": [
+          "O biochar envelhecido perdeu completamente sua estrutura aromática, tornando-se indistinguível da matéria orgânica do solo.",
+          "O biochar envelhecido apresentou maior intensidade de grupos carboxila (COOH), indicando oxidação da superfície e maior capacidade de interação organomineral.",
+          "O biochar recente apresentou maior quantidade de minerais de argila aderidos do que o biochar envelhecido.",
+          "Não houve diferença química detectável, sugerindo que o biochar é inerte no solo."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A análise SXR mostrou que o biochar envelhecido (Historical) tinha uma proporção significativamente maior de grupos funcionais carboxila (COOH) em comparação ao recente. Essa oxidação da superfície ao longo do tempo aumenta a capacidade do biochar de interagir com minerais e cátions, facilitando a formação de revestimentos protetores."
+      },
+      {
+        "id": "weng_q4",
+        "category": "fracionamento_fisico",
+        "difficulty": "medio",
+        "question": "Ao analisar as frações do solo, onde os autores encontraram a maior retenção de novos rizodepósitos (¹³C) no tratamento com duas aplicações de biochar (Histórico + Recente)?",
+        "options": [
+          "Livre na solução do solo, como carbono orgânico dissolvido.",
+          "Exclusivamente na biomassa microbiana, indicando rápida ciclagem sem estabilização.",
+          "Nas frações minerais (<53 µm) e oclusos em microagregados (53–250 µm), confirmando a proteção física e química.",
+          "Apenas nos macroagregados instáveis (>2000 µm), que são facilmente degradados."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Os resultados de fracionamento de densidade e tamanho mostraram que o carbono derivado das raízes (rizodepósitos) foi transferido e estabilizado predominantemente nas frações minerais (M-SOM) e na matéria orgânica particulada oclusa em microagregados (O-POM), onde está protegido da decomposição."
+      },
+      {
+        "id": "weng_q5",
+        "category": "insights_teoricos",
+        "difficulty": "medio",
+        "question": "O estudo desafia o conceito tradicional de 'saturação de carbono do solo'. Qual foi a principal conclusão dos autores sobre o 'teto' de armazenamento de carbono em Ferralsols subtropicais?",
+        "options": [
+          "O teto é fixo e determinado apenas pela textura do solo (teor de argila), não podendo ser alterado por manejo.",
+          "O teto de armazenamento pode ser elevado através da aplicação de biochar, e uma segunda aplicação após alguns anos eleva esse teto ainda mais.",
+          "O biochar reduz o teto de armazenamento de carbono por ocupar o espaço físico que seria da matéria orgânica nativa.",
+          "A saturação de carbono só ocorre em solos de clima temperado, não se aplicando a solos subtropicais."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O estudo demonstrou que a primeira aplicação de biochar elevou o estoque de C. Mais importante, a reaplicação após 8,2 anos resultou em um novo aumento no sequestro de carbono (2,3 Mg C/ha adicionais de novo SOC), provando que o teto de saturação não é estático e pode ser elevado sucessivamente com o manejo de biochar."
+      },
+      {
+        "id": "weng_q6",
+        "category": "mecanismos_estabilizacao",
+        "difficulty": "facil",
+        "question": "Qual é o mecanismo proposto pelos autores, ilustrado no modelo conceitual do estudo, para explicar como o biochar protege o carbono orgânico ao longo do tempo?",
+        "options": [
+          "O biochar libera toxinas que matam todos os microrganismos do solo, parando a decomposição.",
+          "O biochar forma interfaces organominerais contínuas: ele sorve rizodepósitos e necromassa microbiana, que são então cobertos por minerais finos, repetindo o ciclo com novas aplicações.",
+          "O biochar altera o pH do solo para níveis extremos, impedindo a atividade enzimática.",
+          "O biochar absorve toda a água do solo, desidratando a matéria orgânica e impedindo a hidrólise."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O modelo proposto descreve um processo cíclico: (a) Biochar sorve carbono das raízes; (b) Minerais do solo recobrem esse carbono formando interfaces organominerais; (c) Necromassa microbiana também é incorporada e protegida; (d) Novas camadas se formam com o tempo ou novas aplicações, 'construindo' matéria orgânica protegida."
+      },
+      {
+        "id": "weng_q7",
+        "category": "aplicacao_pratica",
+        "difficulty": "medio",
+        "question": "Considerando os resultados de 'priming negativo' (redução da mineralização do SOC nativo), qual implicação prática isso traz para o uso de biochar em estratégias de mitigação climática?",
+        "options": [
+          "O biochar deve ser evitado pois acelera a perda de carbono antigo do solo.",
+          "O biochar serve apenas como carbono inerte, sem afetar o carbono já existente no solo.",
+          "O biochar atua duplamente: armazena carbono recalcitrante (o próprio biochar) e também preserva o carbono nativo do solo ao reduzir sua taxa de decomposição.",
+          "A reaplicação de biochar anula os efeitos da primeira aplicação, não sendo recomendada."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "O estudo mostrou que o tratamento com biochar reduziu a mineralização do SOC nativo em 18%. Isso significa que o biochar é uma ferramenta de Remoção de Dióxido de Carbono (CDR) altamente eficiente, pois soma o C do próprio biochar ao C nativo que deixou de ser emitido para a atmosfera."
+      },
+      {
+        "id": "weng_q8_particao_isotopica",
+        "category": "equacoes_particao",
+        "difficulty": "dificil",
+        "question": "Para resolver as equações de partição de carbono (Eq. 1, 2 e 3) e calcular o 'priming', os autores precisaram isolar a assinatura isotópica (δ¹³C) de cada fonte. Como eles conseguiram determinar experimentalmente a assinatura exclusiva da 'respiração da raiz (+biochar)' sem a interferência do solo nativo?",
+        "options": [
+          "Utilizando valores teóricos de plantas C3 encontrados na literatura.",
+          "Instalando colares de respiração preenchidos com uma mistura de areia lavada e biochar (sem solo), onde as plantas cresceram, garantindo que todo CO₂ emitido vinha apenas das raízes ou do biochar.",
+          "Removendo todas as raízes do solo manualmente antes de medir a respiração.",
+          "Assumindo que a respiração do solo nativo era zero durante o período de crescimento das plantas."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Para usar o modelo de mistura de três fontes, é necessário conhecer os 'end-members' (extremos). O colar 'Areia+Raiz' permitiu medir o δ¹³C da respiração derivada puramente das raízes e do biochar, eliminando a fonte 'solo nativo'. Esse valor foi então inserido na equação para calcular quanto da respiração total nos tratamentos com solo vinha, de fato, da decomposição da matéria orgânica antiga."
+      },
+      {
+        "id": "weng_q9_fib_sem_eds",
+        "category": "microscopia_3d",
+        "difficulty": "medio",
+        "question": "O estudo aplica a técnica FIB-SEM-EDS para gerar visualizações 3D dos microagregados. O que diferencia fundamentalmente essa técnica de uma microscopia eletrônica de varredura (SEM) tradicional e permite a visão interna?",
+        "options": [
+          "O uso de raios-X para tornar o solo transparente.",
+          "O uso de um Feixe de Íons Focado (FIB) que atua como uma ferramenta de corte, removendo fatias sequenciais do material (nanômetro a nanômetro) enquanto o SEM captura imagens de cada face recém-exposta.",
+          "A capacidade de focar em profundidade sem alterar a amostra, similar a um microscópio óptico.",
+          "O uso de softwares de inteligência artificial que adivinham o interior do agregado baseados na superfície."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A sigla FIB refere-se ao 'Focused Ion Beam'. Enquanto o SEM forma a imagem, o feixe de íons 'fresa' (corta) a amostra. O processo automatizado de 'cortar uma fatia, tirar uma foto, cortar outra fatia' permite reconstruir o volume interno (tomografia) e ver onde o carbono está escondido dentro do agregado, o que é impossível com SEM convencional."
+      },
+      {
+        "id": "weng_q10_sxr_carbono",
+        "category": "espectroscopia_raiox",
+        "difficulty": "dificil",
+        "question": "O senso comum associa Raios-X a materiais densos (ossos, metais). Como foi possível utilizar Espectroscopia de Raios-X Moles (SXR) para identificar compostos orgânicos leves, como grupos carboxila (COOH), na superfície do biochar?",
+        "options": [
+          "Os raios-X moles (Soft X-rays) possuem baixa energia, ajustada especificamente para interagir com as camadas eletrônicas do átomo de Carbono (Borda K), gerando espectros de absorção únicos para cada tipo de ligação química.",
+          "Os autores revestiram o carbono com ouro para torná-lo visível aos raios-X.",
+          "A técnica na verdade mede o calor emitido pelo carbono quando atingido por raios-X.",
+          "Os raios-X foram usados apenas para ver os minerais de argila, o carbono foi deduzido por exclusão."
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "A espectroscopia de absorção de raios-X perto da borda (NEXAFS) na borda K do Carbono (~280-300 eV) é altamente sensível ao ambiente químico. A energia exata necessária para excitar um elétron do carbono muda dependendo se ele está ligado a um oxigênio (como na carboxila) ou a outro carbono (aromático/alifático). Isso cria 'picos' específicos no espectro (ex: 288.6 eV para COOH) que funcionam como uma impressão digital molecular."
+      },
+      {
+        "id": "weng_q11_luz_sincrotron",
+        "category": "tecnologia_sincrotron",
+        "difficulty": "medio",
+        "question": "Por que os pesquisadores precisaram recorrer a um laboratório de Luz Síncrotron (como o Australian Synchrotron) em vez de usar equipamentos de laboratório convencionais para as análises de microespectroscopia (IRM e SXR)?",
+        "options": [
+          "Porque o Síncrotron é o único lugar onde é permitido manipular solos contendo biochar.",
+          "Devido ao brilho (intensidade) extremo da luz Síncrotron, que permite focar feixes em áreas microscópicas (<10 µm) com alta relação sinal-ruído, essencial para mapear a heterogeneidade dentro de microagregados minúsculos.",
+          "Porque os equipamentos convencionais destruiriam as amostras de solo.",
+          "Porque a luz Síncrotron acelera o tempo, permitindo ver o envelhecimento do biochar em tempo real."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Para analisar a distribuição espacial de moléculas dentro de um microagregado (que mede entre 53 e 250 micrômetros), é necessário um feixe de luz muito fino e intenso. Fontes de luz convencionais (lâmpadas de laboratório) perdem muita intensidade quando focadas em pontos tão pequenos, gerando dados ruidosos. O Síncrotron gera fótons de altíssimo brilho, permitindo espectroscopia de alta qualidade em escala micrométrica."
+      },
+      {
+        "id": "weng_q12_enzimas",
+        "category": "bioquimica_do_solo",
+        "difficulty": "medio",
+        "question": "Para investigar a eficiência microbiana, os autores mediram a 'Atividade Enzimática Específica'. Como essa métrica é calculada e o que o resultado (diminuição dessa atividade no tratamento Histórico+Recente) indicou sobre o mecanismo de preservação do carbono?",
+        "options": [
+          "É a atividade enzimática total dividida pela biomassa microbiana. A diminuição indicou que os microrganismos se tornaram metabolicamente mais eficientes, produzindo menos enzimas para degradar a mesma quantidade de substrato, o que favorece a preservação do carbono nativo.",
+          "É a contagem total de bactérias no solo. O resultado indicou que o biochar matou a maioria das bactérias.",
+          "É a medição direta da respiração basal. O aumento indicou que os microrganismos estavam estressados.",
+          "É a quantidade de enzima adsorvida no biochar. O resultado mostrou que o biochar inativa as enzimas permanentemente."
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "A Atividade Enzimática Específica é a razão entre a atividade da enzima e a biomassa microbiana[cite: 181, 462]. O estudo encontrou uma atividade específica menor nos solos com biochar, sugerindo uma maior eficiência no uso do carbono (C-use efficiency), o que contribui para o 'priming negativo' (menor mineralização)[cite: 16, 182]."
+      },
+      {
+        "id": "weng_q13_lc_ocd",
+        "category": "quimica_analitica",
+        "difficulty": "dificil",
+        "question": "A técnica de LC-OCD (Liquid Chromatography - Organic Carbon Detection) foi utilizada para analisar o Carbono Orgânico Dissolvido (DOC). Qual descoberta importante sobre a qualidade do carbono dissolvido foi feita com essa técnica no tratamento com duas aplicações de biochar?",
+        "options": [
+          "O carbono dissolvido era composto quase inteiramente por açúcares simples de rápida degradação.",
+          "Houve um aumento significativo nas frações hidrofóbicas e em 'blocos de construção' (compostos oxidados persistentes, como ácidos poliaromáticos), sugerindo que o biochar libera ou estabiliza compostos mais complexos na solução do solo.",
+          "Não foi detectado nenhum carbono orgânico dissolvido nos tratamentos com biochar.",
+          "O LC-OCD mostrou que o biochar absorveu todo o carbono dissolvido da água do solo."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "A análise de LC-OCD revelou que o Carbono Orgânico Dissolvido total, bem como as frações hidrofóbicas e 'building blocks' (carbono persistente oxidado), eram maiores nos solos Histórico+Recente[cite: 358]. Isso apoia a hipótese de oxidação da superfície do biochar e liberação/interação de compostos orgânicos complexos[cite: 530, 531]."
+      },
+      {
+        "id": "weng_q14_irm_mapping",
+        "category": "espectroscopia_infravermelho",
+        "difficulty": "dificil",
+        "question": "Enquanto o SXR analisou pontos específicos, a Microespectroscopia de Infravermelho (IRM) com luz Síncrotron foi usada para criar *mapas* 2D de seções finas dos agregados. Qual correlação espacial crucial foi confirmada através desses mapas de IRM?",
+        "options": [
+          "A correlação entre a presença de minerais de argila (banda -OH em 3630 cm⁻¹) e carbono polissacarídeo/microbiano, confirmando visualmente a teoria de proteção organomineral.",
+          "A correlação entre a temperatura do solo e a cor do biochar.",
+          "A ausência total de carbono alifático dentro dos microagregados.",
+          "A distribuição uniforme de nitrogênio, mas não de carbono."
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "O IRM permitiu mapear grupos funcionais específicos (como polissacarídeos em 1035 cm⁻¹ e argilas em 3630 cm⁻¹) em seções intactas[cite: 500]. Os autores encontraram uma forte correlação espacial (sobreposição de pixels) entre argilas e carbono microbiano/polissacarídeos, fornecendo evidência direta da estabilização do carbono via associação com minerais dentro dos microagregados[cite: 371, 373]."
+      },
+      {
+        "id": "weng_insight_q1",
+        "category": "conceito_teto_carbono",
+        "difficulty": "dificil",
+        "question": "O estudo desafia o conceito tradicional de 'saturação de carbono do solo' (Carbon Saturation Ceiling). Qual foi a descoberta chave dos autores em relação a este limite em Ferralsols subtropicais?",
+        "options": [
+          "O teto de saturação é fixo e determinado pela textura do solo; o biochar apenas preencheu o espaço vazio restante.",
+          "A aplicação de biochar elevou o teto de armazenamento de carbono não apenas uma vez, mas uma segunda aplicação após 8,2 anos aumentou ainda mais a capacidade de sequestro de 'novo carbono' (rizodepósitos).",
+          "O biochar reduziu o teto de armazenamento de carbono ao ocupar fisicamente os poros que seriam usados pela matéria orgânica nativa.",
+          "O teto de saturação só pode ser alterado em solos temperados, não havendo efeito significativo em solos tropicais."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Os autores demonstraram que o 'teto' não é estático. O tratamento 'Histórico + Recente' (duas aplicações) resultou em um armazenamento adicional de 2,3 Mg de novo carbono por hectare comparado ao tratamento apenas Histórico. Isso prova que o biochar cria novas superfícies e interfaces organominerais, efetivamente 'levantando' o limite de quanto carbono o solo pode estabilizar."
+      },
+      {
+        "id": "weng_insight_q2",
+        "category": "efeito_priming",
+        "difficulty": "medio",
+        "question": "Um dos resultados mais importantes para a contabilidade de carbono foi o 'priming negativo'. O que isso significa em termos práticos para um agricultor ou gestor ambiental que utiliza biochar?",
+        "options": [
+          "Significa que o biochar causou a morte das raízes das plantas, reduzindo a entrada de carbono no sistema.",
+          "Significa que, além de adicionar o carbono do próprio biochar, a emenda reduziu a decomposição da matéria orgânica antiga (nativa) do solo em cerca de 18%, preservando estoques pré-existentes.",
+          "Significa que o biochar acelerou a decomposição do húmus antigo, liberando mais CO₂ para a atmosfera nos primeiros anos.",
+          "Significa que o biochar reagiu negativamente com os fertilizantes nitrogenados, diminuindo a produtividade."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Priming negativo ocorre quando uma emenda reduz a mineralização da matéria orgânica nativa. O estudo mostrou que o biochar diminuiu a mineralização do SOC nativo em 18% (em presença de raízes), agindo como um agente preservador do carbono que já estava no solo, além de armazenar novo carbono."
+      },
+      {
+        "id": "weng_insight_q3",
+        "category": "mecanismo_pratico",
+        "difficulty": "medio",
+        "question": "O estudo propõe um modelo conceitual onde o biochar atua como um 'andaime' (scaffold). Qual é a fonte primária do 'novo carbono' que fica retido nesse andaime e como isso ocorre?",
+        "options": [
+          "A fonte é o carbono do próprio biochar que se dissolve e recristaliza.",
+          "A fonte são os resíduos de pesticidas que se ligam quimicamente ao carvão.",
+          "A fonte são os rizodepósitos (exsudatos radiculares) que são sorvidos na superfície do biochar e posteriormente encapsulados por minerais e necromassa microbiana.",
+          "A fonte é o CO₂ atmosférico capturado diretamente pelos poros do biochar sem mediação biológica."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "O mecanismo central descrito é que o biochar sorve carbono derivado das raízes (rizodepósitos). Com o tempo, essa camada orgânica atrai minerais finos e necromassa microbiana, formando microagregados estáveis que protegem esse carbono da decomposição microbiana."
+      },
+      {
+        "id": "weng_insight_q4",
+        "category": "manejo_reaplicacao",
+        "difficulty": "dificil",
+        "question": "Considerando a estratégia de reaplicação de biochar (tratamento 'Histórico + Recente'), qual foi a eficiência observada na estabilização de carbono e qual a implicação para protocolos de manejo a longo prazo?",
+        "options": [
+          "A segunda aplicação foi ineficiente, pois o solo já estava saturado, indicando que o biochar deve ser aplicado uma única vez.",
+          "A segunda aplicação teve um efeito tóxico, reduzindo a biomassa microbiana drasticamente.",
+          "A segunda aplicação gerou uma eficiência de ~1,01 Mg de novo SOC armazenado para cada Mg de Carbono do biochar aplicado, sugerindo que aplicações sequenciais mantêm ou renovam a capacidade de sequestro do solo.",
+          "A reaplicação só funcionou porque o biochar antigo tinha desaparecido completamente do solo."
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "O estudo mostrou uma alta eficiência na reaplicação: para cada tonelada de carbono de biochar adicionada na segunda dose, houve um acúmulo de aproximadamente 1 tonelada de *novo* carbono orgânico do solo (derivado de raízes/micróbios). Isso valida a estratégia de aplicações repetidas para construir estoques de carbono continuamente."
+      },
+      {
+        "id": "weng_insight_q5",
+        "category": "impacto_global",
+        "difficulty": "facil",
+        "question": "Extrapolando os resultados para uma escala global, especificamente para pastagens tropicais em solos Ferralsols, qual é o potencial estimado de sequestro de carbono adicional (além do próprio biochar) segundo os autores?",
+        "options": [
+          "O impacto seria irrelevante, menor que 0,01 Pg C ano⁻¹.",
+          "O potencial é de cerca de 0,23–0,45 Pg C ano⁻¹, o que representa um aumento substancial sobre o sumidouro atual de carbono dessas pastagens.",
+          "O potencial é negativo, pois o uso de biochar em larga escala emitiria mais CO₂ do que sequestraria devido ao transporte.",
+          "O estudo conclui que não é possível fazer extrapolações globais devido à especificidade do local."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Os autores estimam que, se aplicado em Ferralsols sob pastagens tropicais globalmente (assumindo a disponibilidade de biomassa lenhosa sustentável), essa estratégia poderia criar um sumidouro adicional de 0,23 a 0,45 Petagramas de Carbono por ano."
+      },
+      {
+        "id": "weng_insight_q6",
+        "category": "eficiencia_microbiana",
+        "difficulty": "dificil",
+        "question": "O estudo observou um aumento na 'Eficiência de Uso de Carbono' (CUE) pelos microrganismos nos solos tratados. Por que esse insight é crucial para a sustentabilidade do sistema?",
+        "options": [
+          "Porque microrganismos mais eficientes consomem todo o biochar rapidamente, limpando o solo.",
+          "Porque uma maior CUE implica que os microrganismos convertem mais carbono em biomassa (crescimento) e menos em respiração (CO₂), favorecendo o acúmulo de necromassa microbiana estabilizada no solo.",
+          "Porque indica que os microrganismos pararam de processar nutrientes, reduzindo a necessidade de fertilizantes.",
+          "Porque microrganismos eficientes não interagem com as raízes das plantas."
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "O aumento da eficiência de uso do carbono (refletido por um menor quociente metabólico e menor atividade enzimática específica) significa que a comunidade microbiana está respirando menos CO₂ por unidade de biomassa produzida. Isso favorece a retenção de carbono no solo na forma de biomassa e, eventualmente, necromassa protegida."
+      }
+    ]
   }
 ]
