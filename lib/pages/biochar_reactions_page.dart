@@ -8,18 +8,23 @@ class BiocharReactionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 1. Lógica de Tema (Seguindo o padrão do sistema/manual estabelecido)
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFF3F4F6);
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFF0F2F5);
     final textColor = isDark ? Colors.white : const Color(0xFF1A202C);
+    final sectionColor = isDark ? Colors.grey[400] : Colors.grey[600];
 
     return Scaffold(
       backgroundColor: bgColor,
       appBar: AppBar(
-        title: const Text("Química no Solo", style: TextStyle(fontFamily: 'Merriweather', fontWeight: FontWeight.bold)),
+        title: const Text(
+          "Química no Solo",
+          style: TextStyle(fontFamily: 'Merriweather', fontWeight: FontWeight.bold),
+        ),
         centerTitle: true,
-        backgroundColor: Colors.transparent,
+        backgroundColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
         elevation: 0,
-        foregroundColor: textColor,
+        foregroundColor: isDark ? Colors.white : Colors.black87,
         actions: [
           IconButton(onPressed: onToggleTheme, icon: const Icon(Icons.brightness_6)),
         ],
@@ -28,10 +33,10 @@ class BiocharReactionsPage extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         physics: const BouncingScrollPhysics(),
         children: [
-          _buildHeader(textColor),
+          _buildHeader(textColor, isDark),
           const SizedBox(height: 24),
           
-          _buildSectionTitle("1. Aumento da CTC e Superfície", textColor),
+          _buildSectionTitle("1. Aumento da CTC e Superfície", sectionColor),
 
           // CTC 1: Carboxílicos
           _buildReactionCard(
@@ -57,21 +62,21 @@ class BiocharReactionsPage extends StatelessWidget {
             color: Colors.teal,
           ),
 
-          // CTC 3: RETENÇÃO DE NUTRIENTES (NOVO)
+          // CTC 3: RETENÇÃO DE NUTRIENTES
           _buildReactionCard(
             context,
             title: "Retenção de Nutrientes (Adsorção)",
-            description: "As cargas negativas formadas atraem cátions (K, Ca, Mg, NH4) por força eletrostática. \n\nEfeito favorecido em pH > 5.5, onde há menos H⁺ competindo pelos sítios de adsorção.",
+            description: "As cargas negativas formadas atraem cátions (K, Ca, Mg, NH4) por força eletrostática. Efeito favorecido em pH > 5.5.",
             latexEquations: [
               // Retenção de Potássio
               r"R\text{-}COO^- + K^+ \rightleftharpoons R\text{-}COO^- \cdots K^+",
-              // Retenção de Cálcio (Divalente)
+              // Retenção de Cálcio
               r"2(R\text{-}COO^-) + Ca^{2+} \rightleftharpoons (R\text{-}COO)_2 \cdots Ca^{2+}",
-              // Nota sobre competição com H+
+              // Nota sobre competição
               r"\text{\footnotesize Em pH baixo (muito } H^+)\text{, o nutriente é expulso:}",
               r"R\text{-}COO^-K^+ + H^+ \rightarrow R\text{-}COOH + K^+_{(lixiviado)}",
             ],
-            icon: Icons.favorite, // Ícone de atração
+            icon: Icons.favorite, 
             color: Colors.indigoAccent,
           ),
 
@@ -88,7 +93,7 @@ class BiocharReactionsPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 16),
-          _buildSectionTitle("2. Correção de pH (Alcalinidade)", textColor),
+          _buildSectionTitle("2. Correção de pH (Alcalinidade)", sectionColor),
 
           // pH 1: Carbonatos
           _buildReactionCard(
@@ -129,24 +134,23 @@ class BiocharReactionsPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 16),
-          _buildSectionTitle("3. Dinâmica de Nutrientes e C", textColor),
+          _buildSectionTitle("3. Dinâmica de Nutrientes e C", sectionColor),
 
-           // Dissolução
+          // Dissolução
           _buildReactionCard(
             context,
             title: "Dissolução de Sais (Cinzas)",
-            description: "A solubilidade varia drasticamente. Sais de potássio (cinzas) dissolvem rápido, enquanto fosfatos de cálcio dependem da acidez do solo para liberar P.",
+            description: "Sais de potássio dissolvem rápido, enquanto fosfatos de cálcio dependem da acidez do solo para liberar P.",
             latexEquations: [
               // Potássio
               r"K_2CO_3(s) + H_2O \rightarrow 2K^+ + CO_3^{2-}",
-              r"\text{\footnotesize Solubilidade: } \approx 112 \text{ g/100mL (Muito Alta)}",
-              
+              r"\text{\footnotesize Solubilidade: Alta}",
               // Fósforo
               r"Ca_3(PO_4)_2 + 4H^+ \rightarrow 3Ca^{2+} + 2H_2PO_4^-",
-              r"\text{\footnotesize Solubilidade: } \approx 0.002 \text{ g/100mL (Baixa - Requer H}^+)",
+              r"\text{\footnotesize Solubilidade: Baixa (Requer H}^+)",
             ],
             icon: Icons.local_florist,
-            color: Colors.lime,
+            color: Colors.lime[700]!,
           ),
 
           // Efeito Priming
@@ -162,30 +166,28 @@ class BiocharReactionsPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 16),
-          _buildSectionTitle("4. Resistência à Reacidificação (Redox)", textColor),
+          _buildSectionTitle("4. Resistência à Reacidificação (Redox)", sectionColor),
 
-          // Redox: Ferro, Manganês e Enxofre
+          // Redox
           _buildReactionCard(
             context,
             title: "Fontes de Acidez (Reoxidação)",
-            description: "Em ciclos de secagem de solos alagados, a reoxidação de metais reduzidos e enxofre libera grandes quantidades de prótons (H⁺).",
+            description: "Em ciclos de secagem de solos alagados, a reoxidação de metais reduzidos libera H⁺.",
             latexEquations: [
-              r"4Fe^{2+} + O_2 + 4H^+ \rightarrow 4Fe^{3+} + 2H_2O", // Ferro
-              r"2Mn^{2+} + O_2 + 2H_2O \rightarrow 2MnO_2 + 4H^+", // Manganês
-              r"HS^- + 2O_2 \rightarrow SO_4^{2-} + H^+", // Enxofre
+              r"4Fe^{2+} + O_2 + 4H^+ \rightarrow 4Fe^{3+} + 2H_2O",
+              r"HS^- + 2O_2 \rightarrow SO_4^{2-} + H^+",
             ],
             icon: Icons.warning_amber,
             color: Colors.redAccent,
           ),
 
-          // Mecanismo de Amortecimento
+          // Amortecimento
           _buildReactionCard(
             context,
             title: "Amortecimento pelo Biochar",
-            description: "O biocarvão neutraliza a acidez gerada pelas reações redox através da protonação de seus grupos funcionais (tampão).",
+            description: "O biocarvão neutraliza a acidez gerada pelas reações redox através da protonação de seus grupos funcionais.",
             latexEquations: [
-              r"Biochar\text{-}COO^- + H^+_{(da\ oxida\c{c}\tilde{a}o)} \rightarrow Biochar\text{-}COOH",
-              r"Biochar\text{-}O^- + H^+ \rightarrow Biochar\text{-}OH",
+              r"Biochar\text{-}COO^- + H^+ \rightarrow Biochar\text{-}COOH",
             ],
             icon: Icons.shield,
             color: Colors.indigo,
@@ -197,7 +199,7 @@ class BiocharReactionsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildSectionTitle(String title, Color textColor) {
+  Widget _buildSectionTitle(String title, Color? textColor) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12, left: 4),
       child: Text(
@@ -206,24 +208,32 @@ class BiocharReactionsPage extends StatelessWidget {
           fontSize: 12,
           fontWeight: FontWeight.bold,
           letterSpacing: 1.2,
-          color: textColor.withOpacity(0.6),
+          color: textColor,
         ),
       ),
     );
   }
 
-  Widget _buildHeader(Color textColor) {
+  Widget _buildHeader(Color textColor, bool isDark) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "Reações Químicas",
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: textColor),
+          style: TextStyle(
+            fontFamily: 'Merriweather',
+            fontSize: 24, 
+            fontWeight: FontWeight.bold, 
+            color: textColor
+          ),
         ),
         const SizedBox(height: 8),
         Text(
           "Estequiometria detalhada das interações entre biocarvão e solo.",
-          style: TextStyle(fontSize: 14, color: textColor.withOpacity(0.7)),
+          style: TextStyle(
+            fontSize: 14, 
+            color: isDark ? Colors.grey[400] : Colors.grey[700]
+          ),
         ),
       ],
     );
@@ -237,109 +247,107 @@ class BiocharReactionsPage extends StatelessWidget {
     required Color color,
   }) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final cardBg = isDark ? const Color(0xFF1E1E1E) : Colors.white;
     
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
-        borderRadius: BorderRadius.circular(20),
+        color: cardBg,
+        borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 4))
+          BoxShadow(
+            color: color.withOpacity(0.15),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
         ],
+        border: Border(left: BorderSide(color: color, width: 6)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // Cabeçalho
-          Container(
-            padding: const EdgeInsets.all(16),
+      child: Theme(
+        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          initiallyExpanded: false,
+          tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          leading: Container(
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: color.withOpacity(0.1),
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+              borderRadius: BorderRadius.circular(8),
             ),
-            child: Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-                  child: Icon(icon, color: Colors.white, size: 20),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Text(
-                    title,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                      color: isDark ? Colors.white : Colors.black87,
-                    ),
-                  ),
-                ),
-              ],
+            child: Icon(icon, color: color, size: 24),
+          ),
+          title: Text(
+            title,
+            style: TextStyle(
+              fontFamily: 'Merriweather',
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+              color: isDark ? Colors.white : Colors.black87,
             ),
           ),
-          
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  description,
-                  style: TextStyle(
-                    fontSize: 14,
-                    height: 1.5,
-                    color: isDark ? Colors.grey[300] : Colors.grey[700],
-                  ),
-                ),
-                const SizedBox(height: 20),
-                
-                // Box de Equações
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 10),
-                  decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF2C2C2E) : const Color(0xFFF8FAFC),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
-                      width: 1,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    description,
+                    style: TextStyle(
+                      fontSize: 14,
+                      height: 1.5,
+                      color: isDark ? Colors.grey[300] : Colors.grey[700],
                     ),
                   ),
-                  child: Column(
-                    children: [
-                       Text(
-                        "ESTEQUIOMETRIA",
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5,
-                          color: isDark ? Colors.grey[500] : Colors.grey[500],
-                        ),
+                  const SizedBox(height: 20),
+                  
+                  // Box de Equações
+                  Container(
+                    padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 10),
+                    decoration: BoxDecoration(
+                      color: isDark ? const Color(0xFF2C2C2E) : const Color(0xFFF8FAFC),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
+                        width: 1,
                       ),
-                      const SizedBox(height: 8),
-
-                      ...latexEquations.map((eq) => Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 6.0),
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          physics: const BouncingScrollPhysics(),
-                          child: Math.tex(
-                            eq,
-                            textStyle: TextStyle(
-                              fontSize: 16,
-                              color: isDark ? Colors.green[300] : Colors.blue[900],
-                            ),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          "ESTEQUIOMETRIA",
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1.5,
+                            color: isDark ? Colors.grey[500] : Colors.grey[500],
                           ),
                         ),
-                      )),
-                    ],
+                        const SizedBox(height: 12),
+
+                        ...latexEquations.map((eq) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6.0),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            physics: const BouncingScrollPhysics(),
+                            child: Math.tex(
+                              eq,
+                              textStyle: TextStyle(
+                                fontSize: 16,
+                                // Cores ajustadas para contraste em ambos os temas
+                                color: isDark ? Colors.greenAccent[100] : Colors.blueGrey[900],
+                              ),
+                            ),
+                          ),
+                        )),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:biochar_consulting/liming/solubility_page.dart';
 import 'package:biochar_consulting/pages/best.pratices.dart';
 import 'package:biochar_consulting/pages/biochar_reactions_page.dart';
 import 'package:biochar_consulting/pages/biochar_risks_screen.dart';
@@ -11,12 +12,10 @@ import 'package:flutter/material.dart';
 import 'calculos/total_area_screen.dart';
 import 'calculos/cova_screen.dart';
 import 'calculos/sulco_screen.dart';
-import 'pages/certification_screen.dart';
 
 // --- NOVOS IMPORTS DE ESTUDO ---
 import 'package:biochar_consulting/pages/netzero.producer.dart';
-
-import 'package:biochar_consulting/pages/papers_library_screen.dart'; // <--- Import da nova tela
+import 'package:biochar_consulting/pages/papers_library_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final VoidCallback onToggleTheme;
@@ -26,18 +25,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Esta linha é CRUCIAL: ela lê o brilho atual do tema (seja do sistema ou manual)
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    // Cores base
-    final backgroundColor = isDark
-        ? const Color(0xFF121212)
-        : const Color(0xFFF0F2F5);
+    // Cores base adaptativas
+    final backgroundColor = isDark ? const Color(0xFF121212) : const Color(0xFFF0F2F5);
     final sectionTitleColor = isDark ? Colors.grey[400] : Colors.grey[600];
 
     return Scaffold(
       backgroundColor: backgroundColor,
-
-      // MANTIVE O FAB: Acesso rápido ao modo aleatório é sempre útil
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => Navigator.push(
           context,
@@ -52,19 +48,15 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
-
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          // 1. App Bar (Mantida igual)
           SliverAppBar(
             expandedHeight: 160.0,
             floating: false,
             pinned: true,
             stretch: true,
-            backgroundColor: isDark
-                ? const Color(0xFF1E1E1E)
-                : Colors.green[900],
+            backgroundColor: isDark ? const Color(0xFF1E1E1E) : Colors.green[900],
             elevation: 0,
             actions: [
               Container(
@@ -75,8 +67,9 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: IconButton(
                   onPressed: onToggleTheme,
-                  icon: const Icon(
-                    Icons.brightness_6,
+                  icon: Icon(
+                    // Ícone muda dependendo do tema atual
+                    isDark ? Icons.light_mode : Icons.dark_mode,
                     color: Colors.white,
                     size: 20,
                   ),
@@ -111,10 +104,7 @@ class HomeScreen extends StatelessWidget {
                         end: Alignment.bottomLeft,
                         colors: isDark
                             ? [Colors.grey[900]!, Colors.black]
-                            : [
-                                const Color(0xFF1B5E20),
-                                const Color(0xFF43A047),
-                              ],
+                            : [const Color(0xFF1B5E20), const Color(0xFF43A047)],
                       ),
                     ),
                   ),
@@ -141,6 +131,7 @@ class HomeScreen extends StatelessWidget {
                     child: Text(
                       "Bem-vindo, $developerName",
                       style: TextStyle(
+                        fontFamily: 'Merriweather',
                         color: Colors.white.withOpacity(0.9),
                         fontSize: 12,
                         fontWeight: FontWeight.w300,
@@ -151,8 +142,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-
-          // 2. Conteúdo Principal
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
@@ -160,27 +149,8 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // --- SEÇÃO 1: FERRAMENTAS RÁPIDAS ---
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.handyman_outlined,
-                        size: 18,
-                        color: sectionTitleColor,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        "FERRAMENTAS DE CAMPO",
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                          color: sectionTitleColor,
-                        ),
-                      ),
-                    ],
-                  ),
+                  _buildSectionHeader("FERRAMENTAS DE CAMPO", Icons.handyman_outlined, sectionTitleColor),
                   const SizedBox(height: 16),
-
                   SizedBox(
                     height: 110,
                     child: ListView(
@@ -195,8 +165,7 @@ class HomeScreen extends StatelessWidget {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (ctx) =>
-                                  TotalAreaScreen(onToggleTheme: onToggleTheme),
+                              builder: (ctx) => TotalAreaScreen(onToggleTheme: onToggleTheme),
                             ),
                           ),
                         ),
@@ -207,9 +176,7 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.green,
                           onTap: () => Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (ctx) => const CovaScreen(),
-                            ),
+                            MaterialPageRoute(builder: (ctx) => const CovaScreen()),
                           ),
                         ),
                         _toolCard(
@@ -219,9 +186,7 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.orange,
                           onTap: () => Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (ctx) => const SulcoScreen(),
-                            ),
+                            MaterialPageRoute(builder: (ctx) => const SulcoScreen()),
                           ),
                         ),
                       ],
@@ -230,29 +195,9 @@ class HomeScreen extends StatelessWidget {
 
                   const SizedBox(height: 32),
 
-                  // --- NOVA SEÇÃO 2: ESTUDO INTERATIVO ---
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.psychology,
-                        size: 18,
-                        color: sectionTitleColor,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        "ESTUDO INTERATIVO",
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                          color: sectionTitleColor,
-                        ),
-                      ),
-                    ],
-                  ),
+                  // --- SEÇÃO 2: ESTUDO INTERATIVO ---
+                  _buildSectionHeader("ESTUDO INTERATIVO", Icons.psychology, sectionTitleColor),
                   const SizedBox(height: 16),
-
-                  // Grid de 2 Botões para os modos de estudo
                   Row(
                     children: [
                       Expanded(
@@ -265,8 +210,7 @@ class HomeScreen extends StatelessWidget {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (ctx) =>
-                                  QuizSetupScreen(onToggleTheme: onToggleTheme),
+                              builder: (ctx) => QuizSetupScreen(onToggleTheme: onToggleTheme),
                             ),
                           ),
                         ),
@@ -279,13 +223,10 @@ class HomeScreen extends StatelessWidget {
                           subtitle: "Lições Guiadas",
                           icon: Icons.library_books,
                           color: Colors.indigo,
-                          // AQUI VAI PARA A NOVA TELA DE PAPERS
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (ctx) => PapersLibraryScreen(
-                                onToggleTheme: onToggleTheme,
-                              ),
+                              builder: (ctx) => PapersLibraryScreen(onToggleTheme: onToggleTheme),
                             ),
                           ),
                         ),
@@ -295,25 +236,17 @@ class HomeScreen extends StatelessWidget {
 
                   const SizedBox(height: 32),
 
-                  // --- SEÇÃO 3: BASE DE CONHECIMENTO (TEORIA) ---
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.menu_book_rounded,
-                        size: 18,
-                        color: sectionTitleColor,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        "BASE TEÓRICA & NORMAS",
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                          color: sectionTitleColor,
-                        ),
-                      ),
-                    ],
+                  // --- SEÇÃO 3: BASE DE CONHECIMENTO ---
+                  _buildSectionHeader("BASE TEÓRICA & NORMAS", Icons.menu_book_rounded, sectionTitleColor),
+                  const SizedBox(height: 16),
+
+                  _gradientCard(
+                    context,
+                    title: "Química do Solo",
+                    subtitle: "Reações, pH e Complexação",
+                    icon: Icons.science_rounded,
+                    gradientColors: [const Color(0xFF0097A7), const Color(0xFF006064)],
+                    target: (ctx) => SolubilityPage(onToggleTheme: onToggleTheme),
                   ),
                   const SizedBox(height: 16),
 
@@ -322,14 +255,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Certificação & Padrões",
                     subtitle: "Guia passo a passo e requisitos IBI/EBC",
                     icon: Icons.verified_user_rounded,
-                    gradientColors: [
-                      const Color(0xFF00695C),
-                      const Color(0xFF00897B),
-                    ],
-                    target: (ctx) =>
-                        CertificationScreen(onToggleTheme: onToggleTheme),
+                    gradientColors: [const Color(0xFF00695C), const Color(0xFF00897B)],
+                    target: (ctx) => CertificationStandardsScreen(onToggleTheme: onToggleTheme),
                   ),
-
                   const SizedBox(height: 16),
 
                   _gradientCard(
@@ -337,14 +265,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Boas Práticas",
                     subtitle: "Segurança, mistura e aplicação",
                     icon: Icons.school_rounded,
-                    gradientColors: [
-                      const Color(0xFFE65100),
-                      const Color(0xFFFF9800),
-                    ],
-                    target: (ctx) =>
-                        BestPracticesScreen(onToggleTheme: onToggleTheme),
+                    gradientColors: [const Color(0xFFE65100), const Color(0xFFFF9800)],
+                    target: (ctx) => BestPracticesScreen(onToggleTheme: onToggleTheme),
                   ),
-
                   const SizedBox(height: 16),
 
                   _gradientCard(
@@ -352,14 +275,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Avaliando Resultados",
                     subtitle: "Indicadores de sucesso no campo",
                     icon: Icons.analytics_rounded,
-                    gradientColors: [
-                      const Color(0xFF5D4037),
-                      const Color(0xFF8D6E63),
-                    ],
-                    target: (ctx) =>
-                        EvaluationFactorsScreen(onToggleTheme: onToggleTheme),
+                    gradientColors: [const Color(0xFF5D4037), const Color(0xFF8D6E63)],
+                    target: (ctx) => EvaluationFactorsScreen(onToggleTheme: onToggleTheme),
                   ),
-
                   const SizedBox(height: 16),
 
                   _gradientCard(
@@ -367,31 +285,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Dinâmica no Solo",
                     subtitle: "O ciclo de vida do Biochar",
                     icon: Icons.timelapse_rounded,
-                    gradientColors: [
-                      const Color(0xFF283593),
-                      const Color(0xFF3F51B5),
-                    ],
-                    target: (ctx) => BiocharTransformationsScreen(
-                      onToggleTheme: onToggleTheme,
-                    ),
+                    gradientColors: [const Color(0xFF283593), const Color(0xFF3F51B5)],
+                    target: (ctx) => BiocharTransformationsScreen(onToggleTheme: onToggleTheme),
                   ),
-
-                  const SizedBox(height: 16),
-
-                  _gradientCard(
-                    context,
-                    title: "IBI & EBC",
-                    subtitle: "Certificação Global e Europeia",
-                    icon: Icons.public,
-                    gradientColors: [
-                      const Color(0xFF1B5E20),
-                      const Color(0xFF43A047),
-                    ],
-                    target: (ctx) => CertificationStandardsScreen(
-                      onToggleTheme: onToggleTheme,
-                    ),
-                  ),
-
                   const SizedBox(height: 16),
 
                   _gradientCard(
@@ -399,14 +295,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Análise de Riscos",
                     subtitle: "HPAs, Metais e Estabilidade",
                     icon: Icons.warning_amber_rounded,
-                    gradientColors: [
-                      const Color(0xFFC62828),
-                      const Color(0xFFE53935),
-                    ],
-                    target: (ctx) =>
-                        BiocharRisksScreen(onToggleTheme: onToggleTheme),
+                    gradientColors: [const Color(0xFFC62828), const Color(0xFFE53935)],
+                    target: (ctx) => BiocharRisksScreen(onToggleTheme: onToggleTheme),
                   ),
-
                   const SizedBox(height: 16),
 
                   _gradientCard(
@@ -414,27 +305,20 @@ class HomeScreen extends StatelessWidget {
                     title: "Produtor & Crédito de Carbono",
                     subtitle: "Quem gera valor e como ele é distribuído",
                     icon: Icons.balance_outlined,
-                    gradientColors: [Color(0xFF2E7D32), Color(0xFF66BB6A)],
-                    target: (ctx) => NetZeroProducerRelationScreen(
-                      onToggleTheme: onToggleTheme,
-                    ),
+                    gradientColors: [const Color(0xFF2E7D32), const Color(0xFF66BB6A)],
+                    target: (ctx) => NetZeroProducerRelationScreen(onToggleTheme: onToggleTheme),
                   ),
                   const SizedBox(height: 16),
 
                   _gradientCard(
                     context,
-                    title: "Química do Solo",
-                    subtitle: "Reações, pH e Complexação",
-                    icon: Icons.science_rounded, // Ícone de ciência
-                    gradientColors: [
-                      const Color(0xFF0097A7),
-                      const Color(0xFF006064),
-                    ], // Tons de Ciano/Teal
-                    target: (ctx) =>
-                        BiocharReactionsPage(onToggleTheme: onToggleTheme),
+                    title: "Reações Detalhadas",
+                    subtitle: "Mecanismos químicos profundos",
+                    icon: Icons.science_rounded,
+                    gradientColors: [const Color(0xFF0097A7), const Color(0xFF006064)],
+                    target: (ctx) => BiocharReactionsPage(onToggleTheme: onToggleTheme),
                   ),
 
-                  // Rodapé
                   const SizedBox(height: 40),
                   Center(
                     child: Text(
@@ -452,24 +336,32 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // --- WIDGETS AUXILIARES ---
+  // Helper para headers de seção
+  Widget _buildSectionHeader(String title, IconData icon, Color? color) {
+    return Row(
+      children: [
+        Icon(icon, size: 18, color: color),
+        const SizedBox(width: 8),
+        Text(
+          title,
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.2,
+            color: color,
+          ),
+        ),
+      ],
+    );
+  }
 
-  // NOVO: Card Quadrado para Ações de Estudo
-  Widget _studyActionCard(
-    BuildContext context, {
-    required String title,
-    required String subtitle,
-    required IconData icon,
-    required Color color,
-    required VoidCallback onTap,
-  }) {
+  // Cards (mantidos como no original, apenas a lógica de cor do tema)
+  Widget _studyActionCard(BuildContext context, {required String title, required String subtitle, required IconData icon, required Color color, required VoidCallback onTap}) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-
     return Material(
       color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
       borderRadius: BorderRadius.circular(20),
       elevation: isDark ? 0 : 2,
-      shadowColor: Colors.black.withOpacity(0.05),
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
@@ -485,29 +377,13 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: color,
-                  borderRadius: BorderRadius.circular(12),
-                ),
+                decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(12)),
                 child: Icon(icon, color: Colors.white, size: 24),
               ),
               const SizedBox(height: 16),
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: isDark ? Colors.white : Colors.black87,
-                ),
-              ),
+              Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black87)),
               const SizedBox(height: 4),
-              Text(
-                subtitle,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: isDark ? Colors.grey[400] : Colors.grey[600],
-                ),
-              ),
+              Text(subtitle, style: TextStyle(fontSize: 12, color: isDark ? Colors.grey[400] : Colors.grey[600])),
             ],
           ),
         ),
@@ -515,16 +391,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Card Quadrado para Ferramentas (Carrossel)
-  Widget _toolCard(
-    BuildContext context, {
-    required String title,
-    required IconData icon,
-    required Color color,
-    required VoidCallback onTap,
-  }) {
+  Widget _toolCard(BuildContext context, {required String title, required IconData icon, required Color color, required VoidCallback onTap}) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-
     return Container(
       width: 100,
       margin: const EdgeInsets.only(right: 12),
@@ -532,7 +400,6 @@ class HomeScreen extends StatelessWidget {
         color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
         borderRadius: BorderRadius.circular(16),
         elevation: isDark ? 0 : 2,
-        shadowColor: Colors.black.withOpacity(0.05),
         child: InkWell(
           onTap: onTap,
           borderRadius: BorderRadius.circular(16),
@@ -541,22 +408,11 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
-                  shape: BoxShape.circle,
-                ),
+                decoration: BoxDecoration(color: color.withOpacity(0.1), shape: BoxShape.circle),
                 child: Icon(icon, color: color, size: 28),
               ),
               const SizedBox(height: 12),
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: isDark ? Colors.grey[300] : Colors.grey[800],
-                ),
-              ),
+              Text(title, textAlign: TextAlign.center, style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: isDark ? Colors.grey[300] : Colors.grey[800])),
             ],
           ),
         ),
@@ -564,36 +420,17 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Card Retangular com Gradiente
-  Widget _gradientCard(
-    BuildContext context, {
-    required String title,
-    required String subtitle,
-    required IconData icon,
-    required List<Color> gradientColors,
-    required Widget Function(BuildContext) target,
-  }) {
+  Widget _gradientCard(BuildContext context, {required String title, required String subtitle, required IconData icon, required List<Color> gradientColors, required Widget Function(BuildContext) target}) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: gradientColors[0].withOpacity(0.3),
-            blurRadius: 12,
-            offset: const Offset(0, 6),
-          ),
-        ],
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: gradientColors,
-        ),
+        boxShadow: [BoxShadow(color: gradientColors[0].withOpacity(0.3), blurRadius: 12, offset: const Offset(0, 6))],
+        gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: gradientColors),
       ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () =>
-              Navigator.push(context, MaterialPageRoute(builder: target)),
+          onTap: () => Navigator.push(context, MaterialPageRoute(builder: target)),
           borderRadius: BorderRadius.circular(20),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 24),
@@ -601,10 +438,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
-                    shape: BoxShape.circle,
-                  ),
+                  decoration: BoxDecoration(color: Colors.white.withOpacity(0.2), shape: BoxShape.circle),
                   child: Icon(icon, color: Colors.white, size: 26),
                 ),
                 const SizedBox(width: 18),
@@ -612,32 +446,13 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 17,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Merriweather',
-                        ),
-                      ),
+                      Text(title, style: const TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.bold, fontFamily: 'Merriweather')),
                       const SizedBox(height: 4),
-                      Text(
-                        subtitle,
-                        style: TextStyle(
-                          color: Colors.white.withOpacity(0.85),
-                          fontSize: 13,
-                          height: 1.2,
-                        ),
-                      ),
+                      Text(subtitle, style: TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 13, height: 1.2)),
                     ],
                   ),
                 ),
-                Icon(
-                  Icons.arrow_forward_rounded,
-                  color: Colors.white.withOpacity(0.6),
-                  size: 20,
-                ),
+                Icon(Icons.arrow_forward_rounded, color: Colors.white.withOpacity(0.6), size: 20),
               ],
             ),
           ),

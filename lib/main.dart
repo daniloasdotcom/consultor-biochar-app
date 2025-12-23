@@ -14,11 +14,24 @@ class BiocharProApp extends StatefulWidget {
 }
 
 class _BiocharProAppState extends State<BiocharProApp> {
-  bool _dark = false;
+  // Inicializa com ThemeMode.system para seguir a preferência do OS
+  ThemeMode _themeMode = ThemeMode.system;
 
   void toggleTheme() {
     setState(() {
-      _dark = !_dark;
+      // Lógica de alternância: 
+      // Se estiver no sistema, descobre qual é o brilho atual e inverte.
+      // Se já estiver manual, apenas inverte.
+      final brightness = MediaQuery.platformBrightnessOf(context);
+      bool isCurrentlyDark;
+      
+      if (_themeMode == ThemeMode.system) {
+        isCurrentlyDark = brightness == Brightness.dark;
+      } else {
+        isCurrentlyDark = _themeMode == ThemeMode.dark;
+      }
+
+      _themeMode = isCurrentlyDark ? ThemeMode.light : ThemeMode.dark;
     });
   }
 
@@ -27,10 +40,15 @@ class _BiocharProAppState extends State<BiocharProApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Biochar Pro',
-      themeMode: _dark ? ThemeMode.dark : ThemeMode.light,
+      // Aqui está a chave: usa a variável de estado que começa como .system
+      themeMode: _themeMode, 
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1A365D)),
+        brightness: Brightness.light, // Define explicitamente como light
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF1A365D),
+          brightness: Brightness.light,
+        ),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.grey.shade100,
@@ -43,17 +61,23 @@ class _BiocharProAppState extends State<BiocharProApp> {
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
+        brightness: Brightness.dark, // Define explicitamente como dark
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF1A365D),
           brightness: Brightness.dark,
         ),
+        scaffoldBackgroundColor: const Color(0xFF121212), // Fundo padrão escuro
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
+          fillColor: Color(0xFF2C2C2E), // Cor de fundo input dark
           isDense: true,
           contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            borderSide: BorderSide.none,
+          ),
         ),
       ),
-      // Passamos a função de tema para a Home
       home: HomeScreen(onToggleTheme: toggleTheme),
     );
   }
